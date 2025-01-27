@@ -1,5 +1,5 @@
 .login {
-    padding-left: 15%;
+    padding-left: 14%;
 }
 
 .topnav {
@@ -44,7 +44,7 @@
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
 }
 
 /* Sidebar links */
