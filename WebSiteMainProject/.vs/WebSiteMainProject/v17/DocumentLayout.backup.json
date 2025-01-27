@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\static\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\templates\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -27,6 +23,10 @@
       "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\static\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\static\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "login.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\login.html",
               "RelativeDocumentMoniker": "WebSiteMainProject\\templates\\login.html",
@@ -55,20 +55,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "layout.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\layout.html",
               "RelativeDocumentMoniker": "WebSiteMainProject\\templates\\layout.html",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\layout.html",
               "RelativeToolTip": "WebSiteMainProject\\templates\\layout.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-01-27T08:11:39.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\index.html",
               "RelativeDocumentMoniker": "WebSiteMainProject\\templates\\index.html",
@@ -81,20 +81,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "main.js",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\main.js",
               "RelativeDocumentMoniker": "WebSiteMainProject\\static\\main.js",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\main.js",
               "RelativeToolTip": "WebSiteMainProject\\static\\main.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-27T07:58:25.33Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "signup.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\signup.html",
               "RelativeDocumentMoniker": "WebSiteMainProject\\templates\\signup.html",
@@ -120,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "app.py",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\app.py",
               "RelativeDocumentMoniker": "WebSiteMainProject\\app.py",

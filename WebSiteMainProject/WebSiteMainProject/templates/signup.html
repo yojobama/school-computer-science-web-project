@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="login">
+    <form>
+        <label for="username">username: </label>
+        <br>
+        <input type="text" id="username" />
+        <br>
+        <label for="password1">password: </label>
+        <br>
+        <input type="password" id="password1" />
+        <br>
+        <label for="password2">confirm password: </label>
+        <br>
+        <input type="password" id="password2" />
+        <br>
+        <label for="firstName">first name: </label>
+        <br>
+        <input type="text" id="firstName" />
+        <br>
+        <label for="lastName">last name: </label>
+        <br>
+        <input type="text" id="lastName" />
+        <br>
+        <label for="birthDate">birth date: </label>
+        <br>
+        <input type="date" id="birthDate" />
+        <br>
+        <label for="email">email: </label>
+        <br>
+        <input type="email" id="email" />
+        <br>
+        <button type="submit" onclick="openPage('/')">submit</button>
+        <br>
+        <button type="reset">reset</button>
+    </form>
+</div>
+
+{% endblock %}
