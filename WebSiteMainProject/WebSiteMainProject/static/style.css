@@ -1,10 +1,26 @@
+.quizPlay {
+    background-color: white;
+    align-content: center;
+}
+
+    .quizPlay .question {
+        background-color: lightgrey;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        padding-left: 14%;
+    }
+
 .login {
     padding-left: 14%;
 }
 
 .topnav {
     background-color: #333;
-    overflow: hidden;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top */
 }
 
     /* Style the links inside the navigation bar */
@@ -34,8 +50,6 @@
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
-
 /* The side navigation menu */
 .sidebar {
     margin: 0;
@@ -43,11 +57,14 @@
     width: 200px;
     background-color: #f1f1f1;
     position: fixed;
+    top: 6.6%; /* Adjust this based on the height of your topnav */
+    left: 0;
     height: 100%;
-    overflow: hidden;
+    z-index: 1000; /* Ensure it stays on top */
+    overflow: auto;
 }
 
-/* Sidebar links */
+    /* Sidebar links */
     .sidebar a {
         display: block;
         color: black;
@@ -69,9 +86,10 @@
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-    margin-left: 200px;
+    margin-left: 220px; /* Based on the width of sidebar */
     padding: 1px 16px;
     height: 1000px;
+    padding-top: 60px; /* Adjust based on the height of the topnav */
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -80,6 +98,7 @@ div.content {
         width: 100%;
         height: auto;
         position: relative;
+        top: 0; /* Reset top position in mobile view */
     }
 
         .sidebar a {
@@ -88,6 +107,7 @@ div.content {
 
     div.content {
         margin-left: 0;
+        padding-top: 60px; /* Preserve padding for top nav */
     }
 }
 
@@ -98,7 +118,6 @@ div.content {
         float: none;
     }
 }
-
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {

@@ -31,10 +31,13 @@
   <ItemGroup>
     <Content Include="requirements.txt" />
     <Content Include="static\main.js" />
+    <Content Include="static\questions.js" />
     <Content Include="static\style.css" />
     <Content Include="templates\index.html" />
     <Content Include="templates\layout.html" />
     <Content Include="templates\login.html" />
+    <Content Include="templates\quiz.html" />
+    <Content Include="templates\quizcreation.html" />
     <Content Include="templates\signup.html" />
   </ItemGroup>
   <ItemGroup>
