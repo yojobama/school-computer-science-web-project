@@ -7,20 +7,28 @@
       "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\static\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\templates\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\templates\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\templates\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\static\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\signin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\static\\signin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\signup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\templates\\signup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\questions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\static\\questions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\SignupLogin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\static\\SignupLogin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\templates\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -31,16 +39,20 @@
       "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\templates\\quizcreation.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\static\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\quiz.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\templates\\quiz.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\templates\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\questions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\static\\questions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\static\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23C7AB28-FDB7-4971-B234-39977FB9BB77}|WebSiteMainProject\\WebSiteMainProject.pyproj|solutionrelative:WebSiteMainProject\\templates\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,37 +62,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "login.js",
+              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\login.js",
+              "RelativeDocumentMoniker": "WebSiteMainProject\\static\\login.js",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\login.js",
+              "RelativeToolTip": "WebSiteMainProject\\static\\login.js",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-29T11:14:22.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SignupLogin.js",
+              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\SignupLogin.js",
+              "RelativeDocumentMoniker": "WebSiteMainProject\\static\\SignupLogin.js",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\SignupLogin.js",
+              "RelativeToolTip": "WebSiteMainProject\\static\\SignupLogin.js",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-27T12:36:50.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "questions.js",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\questions.js",
               "RelativeDocumentMoniker": "WebSiteMainProject\\static\\questions.js",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\questions.js",
               "RelativeToolTip": "WebSiteMainProject\\static\\questions.js",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-27T11:01:49.506Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "quiz.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\quiz.html",
               "RelativeDocumentMoniker": "WebSiteMainProject\\templates\\quiz.html",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\quiz.html",
               "RelativeToolTip": "WebSiteMainProject\\templates\\quiz.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-01-27T10:54:57.712Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "quizcreation.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\quizcreation.html",
               "RelativeDocumentMoniker": "WebSiteMainProject\\templates\\quizcreation.html",
@@ -93,33 +131,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "login.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\login.html",
               "RelativeDocumentMoniker": "WebSiteMainProject\\templates\\login.html",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\login.html",
               "RelativeToolTip": "WebSiteMainProject\\templates\\login.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAIwA0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-01-27T08:17:33.244Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "layout.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\layout.html",
               "RelativeDocumentMoniker": "WebSiteMainProject\\templates\\layout.html",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\layout.html",
               "RelativeToolTip": "WebSiteMainProject\\templates\\layout.html",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBMAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-01-27T08:11:39.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\index.html",
               "RelativeDocumentMoniker": "WebSiteMainProject\\templates\\index.html",
@@ -127,31 +165,30 @@
               "RelativeToolTip": "WebSiteMainProject\\templates\\index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-27T07:51:37.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T07:51:37.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "main.js",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\main.js",
               "RelativeDocumentMoniker": "WebSiteMainProject\\static\\main.js",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\main.js",
               "RelativeToolTip": "WebSiteMainProject\\static\\main.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-27T07:58:25.33Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "signup.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\signup.html",
               "RelativeDocumentMoniker": "WebSiteMainProject\\templates\\signup.html",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\templates\\signup.html",
               "RelativeToolTip": "WebSiteMainProject\\templates\\signup.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAIwCoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-01-27T07:56:29.52Z",
               "EditorCaption": ""
@@ -162,16 +199,29 @@
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\style.css",
               "RelativeDocumentMoniker": "WebSiteMainProject\\static\\style.css",
-              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\style.css",
-              "RelativeToolTip": "WebSiteMainProject\\static\\style.css",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADsAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\style.css*",
+              "RelativeToolTip": "WebSiteMainProject\\static\\style.css*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-01-27T07:53:49.796Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "signin.js",
+              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\signin.js",
+              "RelativeDocumentMoniker": "WebSiteMainProject\\static\\signin.js",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\static\\signin.js",
+              "RelativeToolTip": "WebSiteMainProject\\static\\signin.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-29T11:14:32.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "app.py",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\WebSiteMainProject\\WebSiteMainProject\\app.py",
               "RelativeDocumentMoniker": "WebSiteMainProject\\app.py",

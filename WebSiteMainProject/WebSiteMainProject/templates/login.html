@@ -2,15 +2,20 @@
 
 {% block content %}
 
-<form class="login">
+<form class="login" onsubmit="return checkLogin()">
     <label for="username">username: </label>
     <br>
     <input type="text" id="username" />
+    <p id="errUsername" style="color: red;"></p>
     <br>
     <label for="password">password: </label>
     <br>
     <input type="password" id="password" />
+    <p id="errPassword" style="color: red;"></p>
     <br>
+    <input type="submit" value="Submit">
 </form>
+
+<script src="../static/login.js"></script>
 
 {% endblock %}

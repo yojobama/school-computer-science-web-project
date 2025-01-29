@@ -30,8 +30,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="static\login.js" />
     <Content Include="static\main.js" />
     <Content Include="static\questions.js" />
+    <Content Include="static\signin.js" />
+    <Content Include="static\SignupLogin.js" />
     <Content Include="static\style.css" />
     <Content Include="templates\index.html" />
     <Content Include="templates\layout.html" />
