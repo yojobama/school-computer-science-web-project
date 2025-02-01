@@ -3,7 +3,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>23c7ab28-fdb7-4971-b234-39977fb9bb77</ProjectGuid>
+    <ProjectGuid>1234e2be-73f1-4b7b-8ba7-4c30076e3010</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <StartupFile>app.py</StartupFile>
@@ -14,8 +14,8 @@
     <WebBrowserUrl>http://localhost</WebBrowserUrl>
     <OutputPath>.</OutputPath>
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
-    <Name>WebSiteMainProject</Name>
-    <RootNamespace>WebSiteMainProject</RootNamespace>
+    <Name>FlaskWebProject1</Name>
+    <RootNamespace>FlaskWebProject1</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,22 +30,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="static\layout.css" />
+    <Content Include="static\layout.js" />
+    <Content Include="static\login.css" />
     <Content Include="static\login.js" />
-    <Content Include="static\main.js" />
-    <Content Include="static\questions.js" />
-    <Content Include="static\signin.js" />
-    <Content Include="static\SignupLogin.js" />
-    <Content Include="static\style.css" />
-    <Content Include="templates\index.html" />
+    <Content Include="static\signup.css" />
+    <Content Include="static\signup.js" />
+    <Content Include="templates\home.html" />
     <Content Include="templates\layout.html" />
     <Content Include="templates\login.html" />
-    <Content Include="templates\quiz.html" />
-    <Content Include="templates\quizcreation.html" />
     <Content Include="templates\signup.html" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="static\" />
     <Folder Include="templates\" />
+    <Folder Include="static\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 

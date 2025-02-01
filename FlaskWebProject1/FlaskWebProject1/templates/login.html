@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Login</h1>
+<form onsubmit="return login_final()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" />
+    <p id="usernameErr" class="error"></p>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" />
+    <p id="passwordErr" class="error"></p>
+
+    <input type="submit" />
+    <input type="reset" />
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='login.js') }}"></script>
+{% endblock %}

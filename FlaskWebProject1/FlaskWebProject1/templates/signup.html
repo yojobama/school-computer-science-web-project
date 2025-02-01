@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Signup</h1>
+<form onsubmit="return signup_final()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" />
+    <p id="usernameErr" class="error"></p>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" />
+    <p id="passwordErr" class="error"></p>
+
+    <label for="passwordCopy">Confirm Password:</label>
+    <input type="password" id="passwordCopy" />
+    <p id="passwordCopyErr" class="error"></p>
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" />
+    <p id="firstNameErr" class="error"></p>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" />
+    <p id="lastNameErr" class="error"></p>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" />
+    <p id="emailErr" class="error"></p>
+
+    <input type="submit" value="Signup" />
+    <input type="reset" value="Reset" />
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='signup.js') }}"></script>
+{% endblock %}
