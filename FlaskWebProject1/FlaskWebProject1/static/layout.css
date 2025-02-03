@@ -25,7 +25,16 @@ table.topbar {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
+
+    .logo a:hover {
+        background-color: #575757;
+    }
 
 .left-options a, .right-options a {
     color: white;

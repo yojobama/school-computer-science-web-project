@@ -9,19 +9,24 @@ app = Flask(__name__)
 # Make the WSGI interface available at the top level so wfastcgi can get it.
 wsgi_app = app.wsgi_app
 
+username = "Guest"
+
 
 @app.route("/signup")
 def signup():
-   return render_template('signup.html')
+    global username
+    return render_template('signup.html', username = username)
 
 
 @app.route("/login")
 def login():
-   return render_template('login.html')
+    global username
+    return render_template('login.html', username = username)
 
 @app.route('/')
 def hello():
-    return render_template('home.html')
+    global username
+    return render_template('home.html', username = username)
 
 if __name__ == '__main__':
     import os
