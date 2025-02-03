@@ -1,3 +1,68 @@
-.error {
-    color: red;
+.signup {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
+
+.signup-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px; /* More rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content within the form */
+}
+
+    .signup-container h1 {
+        color: #333;
+    }
+
+    .signup-container label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+        text-align: left;
+        width: 100%; /* Full width to align with inputs */
+    }
+
+    .signup-container input[type="text"],
+    .signup-container input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px; /* More rounded corners */
+    }
+
+    .signup-container input[type="submit"],
+    .signup-container input[type="reset"] {
+        width: 48%;
+        padding: 10px;
+        margin: 5px 1%;
+        border: none;
+        border-radius: 8px; /* More rounded corners */
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+    }
+
+        .signup-container input[type="submit"]:hover,
+        .signup-container input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+
+    .signup-container .error {
+        color: red;
+        font-size: 0.9em;
+        margin-top: -8px;
+        margin-bottom: 10px;
+        text-align: left;
+        width: 100%; /* Full width to align with inputs */
+    }

@@ -1,35 +1,43 @@
 {% extends "layout.html" %}
 
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='signup.css') }}" />
+{% endblock %}
+
 {% block content %}
-<h1>Signup</h1>
-<form onsubmit="return signup_final()">
-    <label for="username">Username:</label>
-    <input type="text" id="username" />
-    <p id="usernameErr" class="error"></p>
+<div class="signup">
+    <div class="signup-container">
+        <h1>Signup</h1>
+        <form onsubmit="return signup_final()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" />
+            <p id="usernameErr" class="error"></p>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" />
-    <p id="passwordErr" class="error"></p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" />
+            <p id="passwordErr" class="error"></p>
 
-    <label for="passwordCopy">Confirm Password:</label>
-    <input type="password" id="passwordCopy" />
-    <p id="passwordCopyErr" class="error"></p>
+            <label for="passwordCopy">Confirm Password:</label>
+            <input type="password" id="passwordCopy" />
+            <p id="passwordCopyErr" class="error"></p>
 
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" />
-    <p id="firstNameErr" class="error"></p>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" />
+            <p id="firstNameErr" class="error"></p>
 
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" />
-    <p id="lastNameErr" class="error"></p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" />
+            <p id="lastNameErr" class="error"></p>
 
-    <label for="email">Email:</label>
-    <input type="text" id="email" />
-    <p id="emailErr" class="error"></p>
+            <label for="email">Email:</label>
+            <input type="text" id="email" />
+            <p id="emailErr" class="error"></p>
 
-    <input type="submit" value="Signup" />
-    <input type="reset" value="Reset" />
-</form>
+            <input type="submit" value="Signup" />
+            <input type="reset" value="Reset" />
+        </form>
+    </div>
+</div>
 {% endblock %}
 
 {% block scripts %}

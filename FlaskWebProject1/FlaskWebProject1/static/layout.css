@@ -20,21 +20,24 @@ table.topbar {
     width: 33%;
 }
 
-.logo a {
+.logo {
     width: 34%;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-    padding: 5px 10px;
-    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center; /* Center the logo text */
 }
 
-    .logo a:hover {
-        background-color: #575757;
+    .logo a {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
     }
+
+        .logo a:hover {
+            background-color: #575757;
+        }
 
 .left-options a, .right-options a {
     color: white;
@@ -55,7 +58,6 @@ table.topbar {
 .right-options {
     text-align: right;
 }
-
 
 .home-container {
     text-align: center;

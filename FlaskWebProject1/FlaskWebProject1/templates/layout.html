@@ -6,7 +6,6 @@
     <title>YJ-Quiz</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='layout.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='signup.css') }}" />
     <script src="{{ url_for('static', filename='layout.js') }}"></script>
 </head>
 
@@ -18,15 +17,16 @@
                 <a href="#check-quizzes">Check Quizzes</a>
             </td>
             <td class="logo">
-                <a href="/">YJ-Quiz</a> 
+                <a href="/">YJ-Quiz</a>
             </td>
             <td class="right-options">
+                <a>hello: {{ username }}!</a>
                 <a href="{{ url_for('signup') }}">Sign In</a>
                 <a href="{{ url_for('login') }}">Log In</a>
-                <a>hello: {{ username }}!</a>
             </td>
         </tr>
     </table>
+    {% block styles %}{% endblock %}
     {% block content %}{% endblock %}
     {% block scripts %}{% endblock %}
 </body>
