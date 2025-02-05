@@ -36,19 +36,21 @@ function check_username() {
     let username = document.getElementById("username").value;
     let error = document.getElementById("usernameErr");
     let pattern = /^[a-zA-Z0-9]+$/;
+
     if (!username) {
-        error.innerHTML = "Username can not be empty";
+        error.innerHTML = "Username cannot be empty";
         return false;
     }
     else if (username.length < 3) {
         error.innerHTML = "Username must be at least 3 characters long";
         return false;
     } else if (!pattern.test(username)) {
-        error.innerHTML = "Username can only contain numbers or latin letters";
+        error.innerHTML = "Username can only contain numbers or Latin letters";
         return false;
     } else if (username.trim() !== username) {
-        err.innerHTML = "Username can not contain spaces";
+        error.innerHTML = "Username cannot contain spaces";
         return false;
     }
+    error.innerHTML = ""; // Clear any previous error message
     return true;
 }

@@ -10,13 +10,13 @@
 <div class="login">
     <div class="login-container">
         <h1>Login</h1>
-        <form onsubmit="return login_final()">
+        <form method="post" action="{{ url_for('login') }}" onsubmit="return login_final()">
             <label for="username">Username:</label>
-            <input type="text" id="username" />
+            <input type="text" id="username" name="username" required />
             <p id="usernameErr" class="error"></p>
 
             <label for="password">Password:</label>
-            <input type="password" id="password" />
+            <input type="password" id="password" name="password" required />
             <p id="passwordErr" class="error"></p>
 
             <input type="submit" value="Submit" />
@@ -24,6 +24,7 @@
         </form>
     </div>
 </div>
+
 {% endblock %}
 
 {% block scripts %}
