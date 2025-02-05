@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\signup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\signup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\signup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\signup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -23,24 +47,8 @@
       "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\signup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\signup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\signup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\signup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,20 +70,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "login.js",
-              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.js",
-              "RelativeDocumentMoniker": "FlaskWebProject1\\static\\login.js",
-              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.js",
-              "RelativeToolTip": "FlaskWebProject1\\static\\login.js",
+              "DocumentIndex": 2,
+              "Title": "requirements.txt",
+              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\requirements.txt",
+              "RelativeDocumentMoniker": "FlaskWebProject1\\requirements.txt",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\requirements.txt",
+              "RelativeToolTip": "FlaskWebProject1\\requirements.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-03T12:26:02.36Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-05T09:41:19.305Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "home.css",
+              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\home.css",
+              "RelativeDocumentMoniker": "FlaskWebProject1\\static\\home.css",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\home.css",
+              "RelativeToolTip": "FlaskWebProject1\\static\\home.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-03T12:31:24.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "signup.css",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\signup.css",
               "RelativeDocumentMoniker": "FlaskWebProject1\\static\\signup.css",
@@ -83,12 +104,11 @@
               "RelativeToolTip": "FlaskWebProject1\\static\\signup.css",
               "ViewState": "AgIAADUAAAAAAAAAAAAAwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-03T12:16:13.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T12:16:13.417Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "signup.js",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\signup.js",
               "RelativeDocumentMoniker": "FlaskWebProject1\\static\\signup.js",
@@ -96,18 +116,17 @@
               "RelativeToolTip": "FlaskWebProject1\\static\\signup.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-03T12:16:12.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T12:16:12.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "home.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\home.html",
               "RelativeDocumentMoniker": "FlaskWebProject1\\templates\\home.html",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\home.html",
               "RelativeToolTip": "FlaskWebProject1\\templates\\home.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-02-03T12:13:24.489Z",
               "EditorCaption": ""
@@ -120,75 +139,85 @@
               "RelativeDocumentMoniker": "FlaskWebProject1\\static\\layout.css",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\layout.css",
               "RelativeToolTip": "FlaskWebProject1\\static\\layout.css",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAwGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-03T12:05:33.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T12:05:33.007Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "login.css",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.css",
               "RelativeDocumentMoniker": "FlaskWebProject1\\static\\login.css",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.css",
               "RelativeToolTip": "FlaskWebProject1\\static\\login.css",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAwEQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-03T12:05:19.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T12:05:19.607Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "signup.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\signup.html",
               "RelativeDocumentMoniker": "FlaskWebProject1\\templates\\signup.html",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\signup.html",
               "RelativeToolTip": "FlaskWebProject1\\templates\\signup.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-02-03T12:04:06.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "login.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\login.html",
               "RelativeDocumentMoniker": "FlaskWebProject1\\templates\\login.html",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\login.html",
               "RelativeToolTip": "FlaskWebProject1\\templates\\login.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-02-03T12:00:48.779Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "app.py",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\app.py",
               "RelativeDocumentMoniker": "FlaskWebProject1\\app.py",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\app.py",
               "RelativeToolTip": "FlaskWebProject1\\app.py",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-02-03T11:59:33.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "layout.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\layout.html",
               "RelativeDocumentMoniker": "FlaskWebProject1\\templates\\layout.html",
-              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\layout.html",
-              "RelativeToolTip": "FlaskWebProject1\\templates\\layout.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\layout.html*",
+              "RelativeToolTip": "FlaskWebProject1\\templates\\layout.html*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-02-01T16:17:29.453Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "login.js",
+              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.js",
+              "RelativeDocumentMoniker": "FlaskWebProject1\\static\\login.js",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.js",
+              "RelativeToolTip": "FlaskWebProject1\\static\\login.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-03T12:26:02.36Z"
             }
           ]
         }

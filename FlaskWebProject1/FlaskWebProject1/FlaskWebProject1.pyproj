@@ -30,6 +30,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="static\home.css" />
     <Content Include="static\layout.css" />
     <Content Include="static\layout.js" />
     <Content Include="static\login.css" />

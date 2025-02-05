@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YJ-Quiz</title>
+    <title>{% block ttitle %}{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='layout.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}" />
     <script src="{{ url_for('static', filename='layout.js') }}"></script>
@@ -21,8 +21,10 @@
             </td>
             <td class="right-options">
                 <a>hello: {{ username }}!</a>
+                {% if username == "Guest" %}
                 <a href="{{ url_for('signup') }}">Sign In</a>
                 <a href="{{ url_for('login') }}">Log In</a>
+                {% endif %}
             </td>
         </tr>
     </table>

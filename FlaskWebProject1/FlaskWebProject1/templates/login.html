@@ -1,5 +1,7 @@
 {% extends "layout.html" %}
 
+{% block title %} YJ-Quiz Log   in {% endblock %}
+
 {% block styles %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}" />
 {% endblock %}
@@ -17,7 +19,7 @@
             <input type="password" id="password" />
             <p id="passwordErr" class="error"></p>
 
-            <input type="submit" value="Submit"/>
+            <input type="submit" value="Submit" />
             <input type="reset" />
         </form>
     </div>
