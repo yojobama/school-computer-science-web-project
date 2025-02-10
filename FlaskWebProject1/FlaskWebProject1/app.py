@@ -1,3 +1,4 @@
+from functools import wraps
 from flask import Flask, flash, redirect, render_template, request, url_for
 
 app = Flask(__name__)
@@ -5,6 +6,14 @@ app.secret_key = 'supersecretkey'  # Required for flash messages
 
 users = {'Yoav': 'A!1111', 'John': 'A!1111', 'Barak': 'A!1111', 'Maurice': 'A!1111', 'yojobama': 'A!1111'}  # Example user data
 username = "Guest"
+
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if username == None or username == "Guest":
+            return redirect('/login',code=302)
+        return f(*args, **kwargs)
+    return decorated_function
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
@@ -39,8 +48,21 @@ def signup():
             return redirect(url_for('signup'))
     return render_template("signup.html")
 
+@app.route('/logout')
+@login_required
+def logout():
+    global username
+    username = "Guest"
+    return render_template('home.html', username=username)
+
 @app.route('/')
 def hello():
+    global username
+    return render_template('home.html', username=username)
+
+@app.route('/protected')
+@login_required
+def protected():
     global username
     return render_template('home.html', username=username)
 

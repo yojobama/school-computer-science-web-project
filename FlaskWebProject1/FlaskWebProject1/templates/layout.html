@@ -24,6 +24,8 @@
                 {% if username == "Guest" %}
                 <a href="{{ url_for('signup') }}">Sign In</a>
                 <a href="{{ url_for('login') }}">Log In</a>
+                {% else %}
+                <a href="{{ url_for('logout') }}">Logout</a>
                 {% endif %}
             </td>
         </tr>
