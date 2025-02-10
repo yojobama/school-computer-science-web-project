@@ -13,8 +13,10 @@
     <table class="topbar">
         <tr>
             <td class="left-options">
-                <a href="#my-quizzes">My Quizzes</a>
+                {% if username != "Guest" %}
+                <a href="getQuizView">quiz view</a>
                 <a href="#check-quizzes">Check Quizzes</a>
+                {% endif %}
             </td>
             <td class="logo">
                 <a href="/">YJ-Quiz</a>

@@ -1,5 +1,6 @@
 from functools import wraps
-from flask import Flask, flash, redirect, render_template, request, url_for
+import json
+from flask import Flask, flash, jsonify, redirect, render_template, request, url_for
 
 app = Flask(__name__)
 app.secret_key = 'supersecretkey'  # Required for flash messages
@@ -11,12 +12,13 @@ def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if username == None or username == "Guest":
-            return redirect('/login',code=302)
+            return redirect('/login', code=302)
         return f(*args, **kwargs)
     return decorated_function
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
+    global username
     if request.method == 'POST':
         l_username = request.form["username"]
         password = request.form["password"]
@@ -24,29 +26,33 @@ def login():
         global users
         
         if l_username in users and users[l_username] == password:
-            global username
             username = l_username
             return redirect(url_for('hello'))
         else:
             flash("Invalid username or password")
             return redirect(url_for('login'))
-    return render_template('login.html')
+    return render_template('login.html', username=username)
+
+@app.route("/getQuizView")
+@login_required
+def viewQuizes():
+    return render_template('quizView.html', username=username)
 
 @app.route("/signup", methods=["POST", "GET"])
 def signup():
+    global username
     if request.method == "POST":
         global users
         l_username = request.form["username"]
         password = request.form["password"]
         if l_username not in users:
             users[l_username] = password
-            global username
             username = l_username
             return redirect(url_for('hello'))
         else:
             flash("Username is already taken!")
             return redirect(url_for('signup'))
-    return render_template("signup.html")
+    return render_template("signup.html", username=username)
 
 @app.route('/logout')
 @login_required
@@ -60,11 +66,18 @@ def hello():
     global username
     return render_template('home.html', username=username)
 
-@app.route('/protected')
+@app.route('/getQuizes')
 @login_required
-def protected():
-    global username
-    return render_template('home.html', username=username)
+def getQuizes():
+    data = {
+        'items': [
+            {'imageSrc': url_for('static', filename='images/test1.png'), 'name': 'test1'},
+            {'imageSrc': url_for('static', filename='images/test2.png'), 'name': 'test2'},
+            {'imageSrc': url_for('static', filename='images/test3.png'), 'name': 'test3'},
+            {'imageSrc': url_for('static', filename='images/test4.png'), 'name': 'test4'}
+        ]
+    }
+    return jsonify(data)
 
 if __name__ == '__main__':
     import os
@@ -74,3 +87,4 @@ if __name__ == '__main__':
     except ValueError:
         PORT = 5555
     app.run(HOST, PORT)
+

@@ -31,18 +31,26 @@
   <ItemGroup>
     <Content Include="requirements.txt" />
     <Content Include="static\home.css" />
+    <Content Include="static\images\test1.png" />
+    <Content Include="static\images\test2.png" />
+    <Content Include="static\images\test3.png" />
+    <Content Include="static\images\test4.png" />
     <Content Include="static\layout.css" />
     <Content Include="static\layout.js" />
     <Content Include="static\login.css" />
     <Content Include="static\login.js" />
+    <Content Include="static\quizView.css" />
+    <Content Include="static\quizView.js" />
     <Content Include="static\signup.css" />
     <Content Include="static\signup.js" />
     <Content Include="templates\home.html" />
     <Content Include="templates\layout.html" />
     <Content Include="templates\login.html" />
+    <Content Include="templates\quizView.html" />
     <Content Include="templates\signup.html" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="static\images\" />
     <Folder Include="templates\" />
     <Folder Include="static\" />
   </ItemGroup>
