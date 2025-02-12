@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='quiz.css') }}" />
+{% endblock %}
+
+{% block content %}
+<form id="content">
+    <input type="submit" class="quiz-submit" value="Submit" />
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='quiz.js') }}"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const data = {{ data | tojson | safe }};
+        initialize_quiz(data);
+    });
+</script>
+{% endblock %}

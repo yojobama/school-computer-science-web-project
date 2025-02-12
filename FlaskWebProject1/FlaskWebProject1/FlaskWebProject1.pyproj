@@ -39,6 +39,9 @@
     <Content Include="static\layout.js" />
     <Content Include="static\login.css" />
     <Content Include="static\login.js" />
+    <Content Include="static\quiz.css" />
+    <Content Include="static\quiz.js" />
+    <Content Include="templates\quiz.html" />
     <Content Include="static\quizView.css" />
     <Content Include="static\quizView.js" />
     <Content Include="static\signup.css" />

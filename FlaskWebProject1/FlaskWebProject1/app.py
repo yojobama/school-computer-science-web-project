@@ -66,6 +66,18 @@ def hello():
     global username
     return render_template('home.html', username=username)
 
+@app.route('/getQuiz/<quizName>')
+@login_required
+def getQuiz(quizName):
+    global username
+    data = {
+        'test1': {'header': 'Sample Quiz', 'questions': 
+                  [{'question': "test question 1", 'options': ['option 1', 'option 2', 'option 3']},
+                   {'question': "test question 2", 'options': ['option 1 p', 'option 2 p', 'option 3 p']},
+                   {'question': "test question 3", 'options': ['option 1 pp', 'option 2 pp', 'option 3 pp']}]}
+    }
+    return render_template('quiz.html', data=json.dumps(data[quizName]), username=username)
+
 @app.route('/getQuizes')
 @login_required
 def getQuizes():
@@ -87,4 +99,3 @@ if __name__ == '__main__':
     except ValueError:
         PORT = 5555
     app.run(HOST, PORT)
-
