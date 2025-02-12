@@ -16,6 +16,14 @@ def login_required(f):
         return f(*args, **kwargs)
     return decorated_function
 
+@app.route("/create", methods=["GET", "POST"])
+def create():
+    if request.method == "POST":
+        pass
+        # TODO: Implement this
+    else:
+        return render_template("quizCreation.html")
+
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     global username
