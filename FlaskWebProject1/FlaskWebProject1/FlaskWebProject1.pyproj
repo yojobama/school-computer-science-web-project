@@ -41,6 +41,8 @@
     <Content Include="static\login.js" />
     <Content Include="static\quiz.css" />
     <Content Include="static\quiz.js" />
+    <Content Include="static\quizCreation.css" />
+    <Content Include="static\quizCreation.js" />
     <Content Include="templates\quiz.html" />
     <Content Include="static\quizView.css" />
     <Content Include="static\quizView.js" />
@@ -49,6 +51,7 @@
     <Content Include="templates\home.html" />
     <Content Include="templates\layout.html" />
     <Content Include="templates\login.html" />
+    <Content Include="templates\quizCreation.html" />
     <Content Include="templates\quizView.html" />
     <Content Include="templates\signup.html" />
   </ItemGroup>
