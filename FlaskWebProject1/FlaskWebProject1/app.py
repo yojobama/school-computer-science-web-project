@@ -67,7 +67,7 @@ def hello():
     return render_template('home.html', username=username)
 
 @app.route('/getQuiz/<quizName>')
-@login_required
+ # @login_required
 def getQuiz(quizName):
     global username
     data = {
