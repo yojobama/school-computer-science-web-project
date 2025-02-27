@@ -19,10 +19,24 @@ def login_required(f):
 @app.route("/create", methods=["GET", "POST"])
 def create():
     if request.method == "POST":
-        pass
-        # TODO: Implement this
+        data = request.get_json()
+        quiz_name = data.get('name')
+        quiz_description = data.get('description')
+        questions = data.get('questions')
+
+        # Process the quiz data (e.g., save to a database or file)
+        # For demonstration, we'll just print the data
+        print(f"Quiz Name: {quiz_name}")
+        print(f"Quiz Description: {quiz_description}")
+        print("Questions:")
+        for question in questions:
+            print(f"  Question: {question['question']}")
+            print(f"  Options: {', '.join(question['options'])}")
+
+        return jsonify({"message": "Quiz created successfully!"}), 200
     else:
         return render_template("quizCreation.html")
+
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
