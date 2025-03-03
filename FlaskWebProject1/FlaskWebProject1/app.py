@@ -12,6 +12,8 @@ app.secret_key = 'supersecretkey'  # Required for flash messages
 users = {'Yoav': 'A!1111', 'John': 'A!1111', 'Barak': 'A!1111', 'Maurice': 'A!1111', 'yojobama': 'A!1111'}  # Example user data
 username = "Guest"
 
+USER_DB = 'userDB.db'
+
 # a function that simpliphies the process of querying the database
 def query_database(database, query, parameters=()):
     connection = sqlite3.connect(database)
@@ -25,7 +27,7 @@ def query_database(database, query, parameters=()):
 
 #  a function that creates the database if it doesn't exist
 def create_database():
-    query_database(database='userDB.db', query=
+    query_database(database=USER_DB, query=
                    '''CREATE TABLE IF NOT EXISTS users 
                     (username TEXT UNIQUE NOT NULL,
                      password TEXT NOT NULL,
@@ -48,7 +50,7 @@ def login_required(f):
 # TODO: add a function that returns if the current user is an admin or not
 @app.route('/is_admin')
 def is_admin():
-    return query_database(database='userDB.db', query='SELECT isAdmin FROM users WHERE username = ?', parameters=(username))
+    return query_database(database=USER_DB, query='SELECT isAdmin FROM users WHERE username = ?', parameters=(username))
 
 @app.route("/create", methods=["GET", "POST"])
 def create():
@@ -67,7 +69,7 @@ def login():
         l_password = request.form["password"]
 
         # Query the database to check if the username and password match
-        result = query_database(database='userDB.db', query='SELECT * FROM users WHERE username = ? AND password = ?', parameters=(l_username, l_password))
+        result = query_database(database=USER_DB, query='SELECT * FROM users WHERE username = ? AND password = ?', parameters=(l_username, l_password))
         
         if result:  # If a matching user is found
             username = l_username
@@ -94,9 +96,9 @@ def signup():
         l_email = request.form["email"]
 
         # Check if the username already exists
-        result = query_database(database='userDB.db', query='SELECT * FROM users WHERE username = ?', parameters=(l_username,))
+        result = query_database(database=USER_DB, query='SELECT * FROM users WHERE username = ?', parameters=(l_username,))
         if not result:  # If no result is found, the username is available
-            query_database(database='userDB.db', query='INSERT INTO users (username, password, firstName, lastName, email, isAdmin) VALUES (?, ?, ?, ?, ?, ?)', parameters=(l_username, l_password, l_firstName, l_lastName, l_email, False))
+            query_database(database=USER_DB, query='INSERT INTO users (username, password, firstName, lastName, email, isAdmin) VALUES (?, ?, ?, ?, ?, ?)', parameters=(l_username, l_password, l_firstName, l_lastName, l_email, False))
             username = l_username
             return redirect(url_for('hello'))
         else:
@@ -143,7 +145,7 @@ def getQuizes():
 
 @app.route("/users")
 def users():
-    user_list = query_database(database='userDB.db', query='SELECT username, password, firstName, lastName, email FROM users')
+    user_list = query_database(database=USER_DB, query='SELECT username, password, firstName, lastName, email FROM users')
     return render_template('users.html', users=user_list, username=username)
 
 if __name__ == '__main__':
