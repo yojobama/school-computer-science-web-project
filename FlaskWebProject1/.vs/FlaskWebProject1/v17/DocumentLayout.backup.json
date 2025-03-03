@@ -3,44 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\quiz.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\quiz.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\users.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\users.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\quiz.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\quiz.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\quiz.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\quiz.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\users.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\users.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\quizView.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\quizView.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\signup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\signup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\signup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\signup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\quizView.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\quizView.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\quiz.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\quiz.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\signup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\signup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\quiz.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\quiz.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\quizView.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\quizView.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\quiz.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\quiz.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\quizView.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -49,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\static\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\signup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1234E2BE-73F1-4B7B-8BA7-4C30076E3010}|FlaskWebProject1\\FlaskWebProject1.pyproj|solutionrelative:FlaskWebProject1\\templates\\signup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,46 +82,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "login.css",
-              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.css",
-              "RelativeDocumentMoniker": "FlaskWebProject1\\static\\login.css",
-              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.css",
-              "RelativeToolTip": "FlaskWebProject1\\static\\login.css",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-12T10:41:43.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "signup.html",
-              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\signup.html",
-              "RelativeDocumentMoniker": "FlaskWebProject1\\templates\\signup.html",
-              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\signup.html",
-              "RelativeToolTip": "FlaskWebProject1\\templates\\signup.html",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-12T09:22:35.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
               "Title": "quizView.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\quizView.html",
               "RelativeDocumentMoniker": "FlaskWebProject1\\templates\\quizView.html",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\quizView.html",
               "RelativeToolTip": "FlaskWebProject1\\templates\\quizView.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-12T09:22:15.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T09:22:15.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "signup.js",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\signup.js",
               "RelativeDocumentMoniker": "FlaskWebProject1\\static\\signup.js",
@@ -126,20 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "login.html",
-              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\login.html",
-              "RelativeDocumentMoniker": "FlaskWebProject1\\templates\\login.html",
-              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\login.html",
-              "RelativeToolTip": "FlaskWebProject1\\templates\\login.html",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-10T13:13:42.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "quizView.css",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\quizView.css",
               "RelativeDocumentMoniker": "FlaskWebProject1\\static\\quizView.css",
@@ -147,38 +115,126 @@
               "RelativeToolTip": "FlaskWebProject1\\static\\quizView.css",
               "ViewState": "AgIAAAsAAAAAAAAAAAAgwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-10T13:13:37.012Z",
+              "WhenOpened": "2025-02-10T13:13:37.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "signup.html",
+              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\signup.html",
+              "RelativeDocumentMoniker": "FlaskWebProject1\\templates\\signup.html",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\signup.html",
+              "RelativeToolTip": "FlaskWebProject1\\templates\\signup.html",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-12T09:22:35.712Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\login.html",
+              "RelativeDocumentMoniker": "FlaskWebProject1\\templates\\login.html",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\login.html",
+              "RelativeToolTip": "FlaskWebProject1\\templates\\login.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-10T13:13:42.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "quiz.js",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\quiz.js",
               "RelativeDocumentMoniker": "FlaskWebProject1\\static\\quiz.js",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\quiz.js",
               "RelativeToolTip": "FlaskWebProject1\\static\\quiz.js",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwCQAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-02-10T12:59:25.459Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "quiz.html",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\quiz.html",
               "RelativeDocumentMoniker": "FlaskWebProject1\\templates\\quiz.html",
               "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\quiz.html",
               "RelativeToolTip": "FlaskWebProject1\\templates\\quiz.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-10T12:58:58.178Z",
+              "WhenOpened": "2025-02-10T12:58:58.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "login.css",
+              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.css",
+              "RelativeDocumentMoniker": "FlaskWebProject1\\static\\login.css",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.css",
+              "RelativeToolTip": "FlaskWebProject1\\static\\login.css",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-12T10:41:43.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "layout.html",
+              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\layout.html",
+              "RelativeDocumentMoniker": "FlaskWebProject1\\templates\\layout.html",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\layout.html",
+              "RelativeToolTip": "FlaskWebProject1\\templates\\layout.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-12T09:26:16.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "users.css",
+              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\users.css",
+              "RelativeDocumentMoniker": "FlaskWebProject1\\static\\users.css",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\users.css",
+              "RelativeToolTip": "FlaskWebProject1\\static\\users.css",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAqwFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-03T12:40:40.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "users.html",
+              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\users.html",
+              "RelativeDocumentMoniker": "FlaskWebProject1\\templates\\users.html",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\users.html",
+              "RelativeToolTip": "FlaskWebProject1\\templates\\users.html",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-03T12:40:21.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "app.py",
+              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\app.py",
+              "RelativeDocumentMoniker": "FlaskWebProject1\\app.py",
+              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\app.py",
+              "RelativeToolTip": "FlaskWebProject1\\app.py",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-02-12T09:43:18.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "quiz.css",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\quiz.css",
               "RelativeDocumentMoniker": "FlaskWebProject1\\static\\quiz.css",
@@ -186,38 +242,11 @@
               "RelativeToolTip": "FlaskWebProject1\\static\\quiz.css",
               "ViewState": "AgIAAGUAAAAAAAAAAAAuwG8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-10T12:59:16.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T12:59:16.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "app.py",
-              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\app.py",
-              "RelativeDocumentMoniker": "FlaskWebProject1\\app.py",
-              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\app.py",
-              "RelativeToolTip": "FlaskWebProject1\\app.py",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAAEUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-02-12T09:43:18.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "layout.html",
-              "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\layout.html",
-              "RelativeDocumentMoniker": "FlaskWebProject1\\templates\\layout.html",
-              "ToolTip": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\templates\\layout.html",
-              "RelativeToolTip": "FlaskWebProject1\\templates\\layout.html",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-12T09:26:16.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "quizView.js",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\quizView.js",
               "RelativeDocumentMoniker": "FlaskWebProject1\\static\\quizView.js",
@@ -230,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "login.js",
               "DocumentMoniker": "C:\\Users\\Cyber_AI\\Documents\\school\\computer sciance\\school-2024\\FlaskWebProject1\\FlaskWebProject1\\static\\login.js",
               "RelativeDocumentMoniker": "FlaskWebProject1\\static\\login.js",
