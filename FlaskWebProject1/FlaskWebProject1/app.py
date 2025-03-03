@@ -1,12 +1,41 @@
 from functools import wraps
 import json
 from flask import Flask, flash, jsonify, redirect, render_template, request, url_for
+import sqlite3
+
+from sympy import linear_eq_to_matrix
 
 app = Flask(__name__)
 app.secret_key = 'supersecretkey'  # Required for flash messages
 
+# TODO: delete the dictionary
 users = {'Yoav': 'A!1111', 'John': 'A!1111', 'Barak': 'A!1111', 'Maurice': 'A!1111', 'yojobama': 'A!1111'}  # Example user data
 username = "Guest"
+
+# a function that simpliphies the process of querying the database
+def query_database(database, query, parameters=()):
+    connection = sqlite3.connect(database)
+    executor = connection.cursor()
+    executor.execute(query, parameters)
+    result = executor.fetchall()
+    executor.close()
+    connection.commit()
+    connection.close()
+    return result
+
+#  a function that creates the database if it doesn't exist
+def create_database():
+    query_database(database='userDB.db', query=
+                   '''CREATE TABLE IF NOT EXISTS users 
+                    (username TEXT UNIQUE NOT NULL,
+                     password TEXT NOT NULL,
+                     firstName TEXT NOT NULL,
+                     lastName TEXT NOT NULL,
+                     email TEXT NOT NULL,
+                     isAdmin BOOLEAN NOT NULL)'''
+                   )
+# calling the function that creates the database
+create_database()
 
 def login_required(f):
     @wraps(f)
@@ -16,16 +45,31 @@ def login_required(f):
         return f(*args, **kwargs)
     return decorated_function
 
+# TODO: add a function that returns if the current user is an admin or not
+@app.route('/is_admin')
+def is_admin():
+    return query_database(database='userDB.db', query='SELECT isAdmin FROM users WHERE username = ?', parameters=(username))
+
+@app.route("/create", methods=["GET", "POST"])
+def create():
+    if request.method == "POST":
+        pass
+        # TODO: Implement this
+    else:
+        return render_template("quizCreation.html")
+
+@app.route("/login", methods=['GET', 'POST'])
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     global username
     if request.method == 'POST':
         l_username = request.form["username"]
-        password = request.form["password"]
+        l_password = request.form["password"]
 
-        global users
+        # Query the database to check if the username and password match
+        result = query_database(database='userDB.db', query='SELECT * FROM users WHERE username = ? AND password = ?', parameters=(l_username, l_password))
         
-        if l_username in users and users[l_username] == password:
+        if result:  # If a matching user is found
             username = l_username
             return redirect(url_for('hello'))
         else:
@@ -39,14 +83,20 @@ def viewQuizes():
     return render_template('quizView.html', username=username)
 
 @app.route("/signup", methods=["POST", "GET"])
+@app.route("/signup", methods=["POST", "GET"])
 def signup():
     global username
     if request.method == "POST":
-        global users
         l_username = request.form["username"]
-        password = request.form["password"]
-        if l_username not in users:
-            users[l_username] = password
+        l_password = request.form["password"]
+        l_firstName = request.form["firstName"]
+        l_lastName = request.form["lastName"]
+        l_email = request.form["email"]
+
+        # Check if the username already exists
+        result = query_database(database='userDB.db', query='SELECT * FROM users WHERE username = ?', parameters=(l_username,))
+        if not result:  # If no result is found, the username is available
+            query_database(database='userDB.db', query='INSERT INTO users (username, password, firstName, lastName, email, isAdmin) VALUES (?, ?, ?, ?, ?, ?)', parameters=(l_username, l_password, l_firstName, l_lastName, l_email, False))
             username = l_username
             return redirect(url_for('hello'))
         else:
@@ -90,6 +140,11 @@ def getQuizes():
         ]
     }
     return jsonify(data)
+
+@app.route("/users")
+def users():
+    user_list = query_database(database='userDB.db', query='SELECT username, password, firstName, lastName, email FROM users')
+    return render_template('users.html', users=user_list, username=username)
 
 if __name__ == '__main__':
     import os

@@ -1,0 +1,92 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Topbar styles */
+.topbar {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .topbar tr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .topbar .left-options,
+    .topbar .right-options {
+        display: flex;
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .topbar .logo {
+        flex-grow: 1;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+        .topbar .logo a {
+            color: white;
+        }
+
+    .topbar .right-options a {
+        color: white;
+    }
+
+/* Container styles */
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
