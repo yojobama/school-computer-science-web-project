@@ -50,3 +50,12 @@ def create_database():
                      options TEXT NOT NULL
                    )
                    ''')
+
+    # create an admin user named "Admin"
+    query_database(
+        database=utills.USER_DB,
+        query=
+        ('INSERT INTO users (username, password, firstName, lastName, email, isAdmin) '
+         'VALUES (?, ?, ?, ?, ?, ?)'),
+        parameters=("Admin", "A!1111", "Yoav John", "Barak-Maurice", "yojobama@gmail.com",
+                    True))
