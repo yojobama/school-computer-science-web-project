@@ -8,7 +8,6 @@ quiz_bp = Blueprint('quiz', __name__)
 
 username = "Guest"
 
-
 @quiz_bp.route("/create", methods=["POST"])
 @login_required
 def create():
@@ -20,13 +19,11 @@ def create():
 
         # Insert the quiz into the database
         database.query_database(
-            database=USER_DB,
             query='INSERT INTO quizzes (title, description) VALUES (?, ?)',
             parameters=(title, description))
 
         # Get the quiz ID of the newly inserted quiz
         quiz_id = database.query_database(
-            database=USER_DB,
             query='SELECT id FROM quizzes WHERE title = ?',
             parameters=(title, ))[0]['id']
 
@@ -35,7 +32,6 @@ def create():
             question_text = question["question"]
             options = json.dumps(question["options"])  # Store options as JSON
             database.query_database(
-                database=USER_DB,
                 query=
                 'INSERT INTO questions (quiz_id, question_text, options) VALUES (?, ?, ?)',
                 parameters=(quiz_id, question_text, options))
@@ -59,7 +55,6 @@ def getQuiz(quizName):
     # query the database to get the questions of the quiz
     # then make it a json object and pass it to the template
     data = database.query_database(
-        database=USER_DB,
         query='SELECT * FROM quizzes WHERE title = ?',
         parameters=(quizName, ))
 
@@ -73,7 +68,7 @@ def getQuiz(quizName):
 def getQuizes():
     # query the database to get all of the quizzes and then jsonify them
     data = database.query_database(
-        database=USER_DB, query='SELECT title, description FROM quizzes')
+        query='SELECT title, description FROM quizzes')
 
     data = {
         'items': [{
@@ -96,7 +91,6 @@ def getQuizes():
 @quiz_bp.route("/users")
 def users():
     user_list = database.query_database(
-        database=USER_DB,
         query='SELECT username, password, firstName, lastName, email FROM users'
     )
     return render_template('users.html', users=user_list, username=username)
