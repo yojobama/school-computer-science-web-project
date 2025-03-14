@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='quizCreation.css') }}" />
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Quiz Creation</h1>
+            <form id="quizForm" method="post">
+                <div class="form-group">
+                    <label for="quizName">Quiz Name</label>
+                    <input type="text" class="form-control" id="quizName" name="quizName" placeholder="Enter quiz name">
+                    <label for="quizDescription">Quiz Description</label>
+                    <input type="text" class="form-control" id="quizDescription" name="quizDescription" placeholder="Enter quiz description">
+                    <button type="button" onclick="openQuestionForm()">Add Question</button>
+                    <ul id="questionList"></ul>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <form id="questionForm" style="display: none;">
+                <label for="question">Question:</label>
+                <input type="text" id="question">
+                <label for="options">Options (each on a separate line):</label>
+                <textarea id="options"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='quizCreation.js') }}"></script>
+{% endblock %}

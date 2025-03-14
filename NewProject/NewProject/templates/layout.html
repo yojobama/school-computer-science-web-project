@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block ttitle %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='layout.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}" />
+    <script src="{{ url_for('static', filename='layout.js') }}"></script>
+</head>
+
+<body>
+    <table class="topbar">
+        <tr>
+            <td class="left-options">
+                {% if username != "Guest" %}
+                <a href="getQuizView">quiz view</a>
+                <a href="#check-quizzes">Check Quizzes</a>
+                {% endif %}
+            </td>
+            <td class="logo">
+                <a href="/">YJ-Quiz</a>
+            </td>
+            <td class="right-options">
+                <a>hello: {{ username }}!</a>
+                {% if username == "Guest" %}
+                <a href="{{ url_for('signup') }}">Sign In</a>
+                <a href="{{ url_for('login') }}">Log In</a>
+                {% else %}
+                <a href="{{ url_for('logout') }}">Logout</a>
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+    {% block styles %}{% endblock %}
+    {% block content %}{% endblock %}
+    {% block scripts %}{% endblock %}
+</body>
+</html>

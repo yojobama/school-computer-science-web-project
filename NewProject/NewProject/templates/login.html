@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %} YJ-Quiz Log   in {% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}" />
+{% endblock %}
+
+{% block content %}
+<div class="login">
+    <div class="login-container">
+        <h1>Login</h1>
+        <form method="post" action="{{ url_for('login') }}" onsubmit="return login_final()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+            <p id="usernameErr" class="error"></p>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <p id="passwordErr" class="error"></p>
+
+            <input type="submit" value="Submit" />
+            <input type="reset" />
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='login.js') }}"></script>
+{% endblock %}
