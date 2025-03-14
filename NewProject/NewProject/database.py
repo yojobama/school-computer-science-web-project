@@ -15,14 +15,37 @@ def query_database(database, query, parameters=()):
 def create_database():
     # create the users table
     query_database(database=utills.USER_DB, query=
-                   '''CREATE TABLE IF NOT EXISTS users 
-                    (username TEXT UNIQUE NOT NULL,
+                   '''
+                   CREATE TABLE IF NOT EXISTS users 
+                   (
+                     username TEXT UNIQUE NOT NULL,
                      password TEXT NOT NULL,
                      firstName TEXT NOT NULL,
                      lastName TEXT NOT NULL,
                      email TEXT NOT NULL,
-                     isAdmin BOOLEAN NOT NULL)'''
+                     isAdmin BOOLEAN NOT NULL
+                   )
+                   '''
                    )
     # create the quizzes table
+    query_database(database=utills.USER_DB,
+                   query='''
+                   CREATE TABLE IF NOT EXISTS quizzes 
+                   (
+                     ID INTEGER PRIMARY KEY AUTOINCREMENT,
+                     title TEXT NOT NULL,
+                     description TEXT NOT NULL,
+                     creator TEXT NOT NULL,
+                   )
+                   ''')
     # create the questions table
-    # create the answers table
+    query_database(database=utills.USER_DB,
+                   query='''
+                   CREATE TABLE IF NOT EXISTS questions
+                   (
+                     quizID INTEGER NOT NULL,
+                     question TEXT NOT NULL,
+                     answer TEXT NOT NULL,
+                     options TEXT NOT NULL
+                   )
+                   ''')
