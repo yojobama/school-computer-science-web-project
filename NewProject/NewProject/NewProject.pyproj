@@ -27,23 +27,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
-    <Content Include="static\home.css" />
+    <Content Include="static\styles\home.css" />
     <Content Include="static\images\test1.png" />
     <Content Include="static\images\test2.png" />
     <Content Include="static\images\test3.png" />
     <Content Include="static\images\test4.png" />
-    <Content Include="static\layout.css" />
-    <Content Include="static\layout.js" />
-    <Content Include="static\login.css" />
-    <Content Include="static\login.js" />
-    <Content Include="static\quiz.css" />
-    <Content Include="static\quiz.js" />
-    <Content Include="static\quizCreation.css" />
-    <Content Include="static\quizCreation.js" />
-    <Content Include="static\quizView.css" />
-    <Content Include="static\quizView.js" />
-    <Content Include="static\signup.css" />
-    <Content Include="static\signup.js" />
+    <Content Include="static\styles\layout.css" />
+    <Content Include="static\scripts\layout.js" />
+    <Content Include="static\styles\login.css" />
+    <Content Include="static\scripts\login.js" />
+    <Content Include="static\styles\quiz.css" />
+    <Content Include="static\scripts\quiz.js" />
+    <Content Include="static\styles\quizCreation.css" />
+    <Content Include="static\scripts\quizCreation.js" />
+    <Content Include="static\styles\quizView.css" />
+    <Content Include="static\scripts\quizView.js" />
+    <Content Include="static\styles\signup.css" />
+    <Content Include="static\scripts\signup.js" />
     <Content Include="templates\home.html" />
     <Content Include="templates\layout.html" />
     <Content Include="templates\login.html" />
@@ -70,6 +70,8 @@
   <ItemGroup>
     <Folder Include="static\" />
     <Folder Include="static\images\" />
+    <Folder Include="static\styles\" />
+    <Folder Include="static\scripts\" />
     <Folder Include="templates\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />

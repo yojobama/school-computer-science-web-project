@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block styles %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='quizView.css') }}">
+<link rel="stylesheet" type="text/css" href="../static/styles/quizView.css">
 {% endblock %}
 
 {% block content %}
@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script src="{{ url_for('static', filename='quizView.js') }}"></script>
+<script src="../static/scripts/quizView.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         initialize_quizes();

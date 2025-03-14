@@ -3,14 +3,14 @@
 {% block title %} YJ-Quiz Signup {% endblock %}
 
 {% block styles %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='signup.css') }}" />
+<link rel="stylesheet" type="text/css" href="../static/styles/signup.css" />
 {% endblock %}
 
 {% block content %}
 <div class="signup">
     <div class="signup-container">
         <h1>Signup</h1>
-        <form method="post" action="{{ url_for('auth.signup') }}">
+        <form method="post" action="{{ url_for('auth.signup') }}" onsubmit="signup_final()">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required />
             <p id="usernameErr" class="error"></p>
@@ -36,4 +36,8 @@
         </form>
     </div>
 </div>
+{% endblock %}
+
+{% block "scripts" %}
+<script src="../static/scripts/signup.js"></script>
 {% endblock %}
