@@ -9,8 +9,8 @@
     <p>Your ultimate platform for creating and taking quizzes. Whether you're a teacher, student, or just someone who loves quizzes, YJ-Quiz has something for you.</p>
     {% if username == "Guest" %}
     <div class="cta-buttons">
-        <a href="{{ url_for('signup') }}" class="btn">Sign Up</a>
-        <a href="{{ url_for('login') }}" class="btn">Log In</a>
+        <a href="{{ url_for('auth.signup') }}" class="btn">Sign Up</a>
+        <a href="{{ url_for('auth.login') }}" class="btn">Log In</a>
     </div>
     {% endif %}
 </div>

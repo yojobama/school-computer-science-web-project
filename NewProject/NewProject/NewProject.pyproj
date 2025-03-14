@@ -54,6 +54,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="auth.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="database.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="quiz.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utills.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />

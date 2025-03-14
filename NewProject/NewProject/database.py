@@ -1,6 +1,7 @@
 import sqlite3
 import utills
 
+
 def query_database(database, query, parameters=()):
     connection = sqlite3.connect(database)
     executor = connection.cursor()
@@ -11,11 +12,12 @@ def query_database(database, query, parameters=()):
     connection.close()
     return result
 
-#  a function that creates the database if it doesn't exist
+
+# a function that creates the database if it doesn't exist
 def create_database():
     # create the users table
-    query_database(database=utills.USER_DB, query=
-                   '''
+    query_database(database=utills.USER_DB,
+                   query='''
                    CREATE TABLE IF NOT EXISTS users 
                    (
                      username TEXT UNIQUE NOT NULL,
@@ -25,8 +27,7 @@ def create_database():
                      email TEXT NOT NULL,
                      isAdmin BOOLEAN NOT NULL
                    )
-                   '''
-                   )
+                   ''')
     # create the quizzes table
     query_database(database=utills.USER_DB,
                    query='''
@@ -35,7 +36,7 @@ def create_database():
                      ID INTEGER PRIMARY KEY AUTOINCREMENT,
                      title TEXT NOT NULL,
                      description TEXT NOT NULL,
-                     creator TEXT NOT NULL,
+                     creator TEXT NOT NULL
                    )
                    ''')
     # create the questions table
