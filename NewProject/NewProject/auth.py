@@ -4,7 +4,7 @@ import database
 auth_bp = Blueprint('auth', __name__)
 
 username = "Guest"
-USER_DB = 'userDB.db'
+
 
 @auth_bp.route("/login", methods=['GET', 'POST'])
 def login():
@@ -15,7 +15,6 @@ def login():
 
         # Query the database to check if the username and password match
         result = database.query_database(
-            database=USER_DB,
             query='SELECT * FROM users WHERE username = ? AND password = ?',
             parameters=(l_username, l_password))
 
@@ -26,6 +25,7 @@ def login():
             flash("Invalid username or password")
             return redirect(url_for('auth.login'))
     return render_template('login.html', username=username)
+
 
 @auth_bp.route("/signup", methods=["POST", "GET"])
 def signup():
@@ -39,23 +39,22 @@ def signup():
 
         # Check if the username already exists
         result = database.query_database(
-            database=USER_DB,
             query='SELECT * FROM users WHERE username = ?',
             parameters=(l_username, ))
         if not result:  # If no result is found, the username is available
-            database.query_database(
-                database=USER_DB,
-                query=(
-                    'INSERT INTO users (username, password, firstName, lastName, email, isAdmin) '
-                    'VALUES (?, ?, ?, ?, ?, ?)'
-                ),
-                parameters=(l_username, l_password, l_firstName, l_lastName, l_email, False))
+            database.query_database(query=(
+                'INSERT INTO users (username, password, firstName, lastName, email, isAdmin) '
+                'VALUES (?, ?, ?, ?, ?, ?)'),
+                                    parameters=(l_username, l_password,
+                                                l_firstName, l_lastName,
+                                                l_email, False))
             username = l_username
             return redirect(url_for('hello'))
         else:
             flash("Username is already taken!")
             return redirect(url_for('auth.signup'))
     return render_template("signup.html", username=username)
+
 
 @auth_bp.route('/logout')
 def logout():

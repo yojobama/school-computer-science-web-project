@@ -2,8 +2,8 @@ import sqlite3
 import utills
 
 
-def query_database(database, query, parameters=()):
-    connection = sqlite3.connect(database)
+def query_database(query, parameters=()):
+    connection = sqlite3.connect("DB.db")
     executor = connection.cursor()
     executor.execute(query, parameters)
     result = executor.fetchall()
@@ -16,8 +16,7 @@ def query_database(database, query, parameters=()):
 # a function that creates the database if it doesn't exist
 def create_database():
     # create the users table
-    query_database(database=utills.USER_DB,
-                   query='''
+    query_database(query='''
                    CREATE TABLE IF NOT EXISTS users 
                    (
                      username TEXT UNIQUE NOT NULL,
@@ -29,8 +28,7 @@ def create_database():
                    )
                    ''')
     # create the quizzes table
-    query_database(database=utills.USER_DB,
-                   query='''
+    query_database(query='''
                    CREATE TABLE IF NOT EXISTS quizzes 
                    (
                      ID INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -40,8 +38,7 @@ def create_database():
                    )
                    ''')
     # create the questions table
-    query_database(database=utills.USER_DB,
-                   query='''
+    query_database(query='''
                    CREATE TABLE IF NOT EXISTS questions
                    (
                      quizID INTEGER NOT NULL,
@@ -52,10 +49,8 @@ def create_database():
                    ''')
 
     # create an admin user named "Admin"
-    query_database(
-        database=utills.USER_DB,
-        query=
-        ('INSERT INTO users (username, password, firstName, lastName, email, isAdmin) '
-         'VALUES (?, ?, ?, ?, ?, ?)'),
-        parameters=("Admin", "A!1111", "Yoav John", "Barak-Maurice", "yojobama@gmail.com",
-                    True))
+    query_database(query=(
+        'INSERT INTO users (username, password, firstName, lastName, email, isAdmin) '
+        'VALUES (?, ?, ?, ?, ?, ?)'),
+                   parameters=("Admin", "A!1111", "Yoav John", "Barak-Maurice",
+                               "yojobama@gmail.com", True))

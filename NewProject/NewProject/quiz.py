@@ -6,8 +6,8 @@ from utills import login_required
 
 quiz_bp = Blueprint('quiz', __name__)
 
-USER_DB = 'userDB.db'
 username = "Guest"
+
 
 @quiz_bp.route("/create", methods=["POST"])
 @login_required
@@ -36,7 +36,8 @@ def create():
             options = json.dumps(question["options"])  # Store options as JSON
             database.query_database(
                 database=USER_DB,
-                query='INSERT INTO questions (quiz_id, question_text, options) VALUES (?, ?, ?)',
+                query=
+                'INSERT INTO questions (quiz_id, question_text, options) VALUES (?, ?, ?)',
                 parameters=(quiz_id, question_text, options))
 
         flash("Quiz created successfully!")
@@ -44,10 +45,12 @@ def create():
     else:
         return render_template("quizCreation.html")
 
+
 @quiz_bp.route("/getQuizView")
 @login_required
 def viewQuizes():
     return render_template('quizView.html', username=username)
+
 
 @quiz_bp.route('/getQuiz/<quizName>')
 @login_required
@@ -63,6 +66,7 @@ def getQuiz(quizName):
     return render_template('quiz.html',
                            data=json.dumps(data[quizName]),
                            username=username)
+
 
 @quiz_bp.route('/getQuizes')
 @login_required
@@ -87,6 +91,7 @@ def getQuizes():
         }]
     }
     return jsonify(data)
+
 
 @quiz_bp.route("/users")
 def users():
