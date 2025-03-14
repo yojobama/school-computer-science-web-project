@@ -1,6 +1,9 @@
 from functools import wraps
 import json
-from flask import Flask, flash, jsonify, redirect, render_template, request, url_for
+from multiprocessing.connection import answer_challenge
+from typing import Self
+from flask import g, Flask, flash, jsonify, redirect, render_template, request, url_for
+import sqlite3
 
 app = Flask(__name__)
 app.secret_key = 'supersecretkey'  # Required for flash messages
@@ -8,13 +11,33 @@ app.secret_key = 'supersecretkey'  # Required for flash messages
 users = {'Yoav': 'A!1111', 'John': 'A!1111', 'Barak': 'A!1111', 'Maurice': 'A!1111', 'yojobama': 'A!1111'}  # Example user data
 username = "Guest"
 
-def login_required(f):
-    @wraps(f)
-    def decorated_function(*args, **kwargs):
-        if username == None or username == "Guest":
-            return redirect('/login', code=302)
-        return f(*args, **kwargs)
-    return decorated_function
+class DB:
+    def get_db():
+        db = getattr(g, '_database', None)
+        if db is None:
+            db = g._database = sqlite3.connect("db.sqlite")
+        return db
+
+    @app.teardown_appcontext
+    def close_connection(exception):
+        db = getattr(g, '_database', None)
+        if db is not None:
+            db.close()
+
+    def query_db(query, query_params=()):
+        cursor = DB.get_db().execute(query, query_params)
+        answer = cursor.fetchall()
+        cursor.close()
+        return answer
+
+class Utills:
+    def login_required(f):
+        @wraps(f)
+        def decorated_function(*args, **kwargs):
+            if username == None or username == "Guest":
+                return redirect('/login', code=302)
+            return f(*args, **kwargs)
+        return decorated_function
 
 @app.route("/create", methods=["GET", "POST"])
 def create():
@@ -46,7 +69,7 @@ def login():
         password = request.form["password"]
 
         global users
-        
+
         if l_username in users and users[l_username] == password:
             username = l_username
             return redirect(url_for('hello'))
@@ -56,7 +79,7 @@ def login():
     return render_template('login.html', username=username)
 
 @app.route("/getQuizView")
-@login_required
+@Utills.Utills.login_required
 def viewQuizes():
     return render_template('quizView.html', username=username)
 
@@ -77,7 +100,7 @@ def signup():
     return render_template("signup.html", username=username)
 
 @app.route('/logout')
-@login_required
+@Utills.login_required
 def logout():
     global username
     username = "Guest"
@@ -89,11 +112,11 @@ def hello():
     return render_template('home.html', username=username)
 
 @app.route('/getQuiz/<quizName>')
-@login_required
+@Utills.login_required
 def getQuiz(quizName):
     global username
     data = {
-        'test1': {'header': 'Sample Quiz', 'questions': 
+        'test1': {'header': 'Sample Quiz', 'questions':
                   [{'question': "test question 1", 'options': ['option 1', 'option 2', 'option 3']},
                    {'question': "test question 2", 'options': ['option 1 p', 'option 2 p', 'option 3 p']},
                    {'question': "test question 3", 'options': ['option 1 pp', 'option 2 pp', 'option 3 pp']}]}
@@ -101,7 +124,7 @@ def getQuiz(quizName):
     return render_template('quiz.html', data=json.dumps(data[quizName]), username=username)
 
 @app.route('/getQuizes')
-@login_required
+@Utills.login_required
 def getQuizes():
     data = {
         'items': [
