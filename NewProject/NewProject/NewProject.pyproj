@@ -44,6 +44,7 @@
     <Content Include="static\scripts\quizView.js" />
     <Content Include="static\styles\signup.css" />
     <Content Include="static\scripts\signup.js" />
+    <Content Include="static\styles\users.css" />
     <Content Include="templates\home.html" />
     <Content Include="templates\layout.html" />
     <Content Include="templates\login.html" />
@@ -51,6 +52,7 @@
     <Content Include="templates\quizCreation.html" />
     <Content Include="templates\quizView.html" />
     <Content Include="templates\signup.html" />
+    <Content Include="templates\users.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="app.py" />

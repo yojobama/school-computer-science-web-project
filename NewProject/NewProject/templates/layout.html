@@ -13,8 +13,8 @@
         <tr>
             <td class="left-options">
                 {% if username != "Guest" %}
-                <a href="getQuizView">quiz view</a>
-                <a href="#check-quizzes">Check Quizzes</a>
+                <a href="getQuizView">quiz list</a>
+                <a href="create">create a new quiz</a>
                 {% endif %}
             </td>
             <td class="logo">
@@ -22,6 +22,9 @@
             </td>
             <td class="right-options">
                 <a>hello: {{ username }}!</a>
+                {% if is_admin %}
+                <a href="users">User Manegment</a>
+                {% endif %}
                 {% if username == "Guest" %}
                 <a href="{{ url_for('auth.signup') }}">Sign In</a>
                 <a href="{{ url_for('auth.login') }}">Log In</a>

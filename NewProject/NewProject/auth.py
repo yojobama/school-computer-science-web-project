@@ -7,6 +7,13 @@ auth_bp = Blueprint('auth', __name__)
 username = "Guest"
 
 
+def yj_render(page, **kwargs):
+    global username
+    return render_template(page, username=username, is_admin=is_admin(), **kwargs)
+
+def is_admin():
+    return database.query_database(query="SELECT isAdmin FROM users WHERE username=?", parameters=[username])
+
 def login_required(f):
 
     @wraps(f)
@@ -20,7 +27,7 @@ def login_required(f):
 def admin_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if database.query_database(query="SELECT isAdmin FROM users WHERE username=?", parameters=[username]):
+        if isAdmin():
             return f(*args, **kwargs)
         else:
             return redirect('/login', code=302)
@@ -44,7 +51,7 @@ def login():
         else:
             flash("Invalid username or password")
             return redirect(url_for('auth.login'))
-    return render_template('login.html', username=username)
+    return yj_render('login.html')
 
 
 @auth_bp.route("/signup", methods=["POST", "GET"])
@@ -73,7 +80,7 @@ def signup():
         else:
             flash("Username is already taken!")
             return redirect(url_for('auth.signup'))
-    return render_template("signup.html", username=username)
+    return yj_render("signup.html")
 
 
 @auth_bp.route('/logout')

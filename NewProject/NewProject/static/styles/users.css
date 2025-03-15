@@ -1,0 +1,55 @@
+/* General styles */
+.users-page body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.users-page a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+    .users-page a:hover {
+        text-decoration: underline;
+    }
+
+/* Container styles */
+.users-page .container {
+    width: 80%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Table styles */
+.users-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.users-page table, .users-page th, .users-page td {
+    border: 1px solid #ddd;
+}
+
+.users-page th, .users-page td {
+    padding: 12px;
+    text-align: left;
+}
+
+.users-page th {
+    background-color: #f2f2f2;
+}
+
+.users-page tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.users-page tr:hover {
+    background-color: #f1f1f1;
+}

@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import database
-from auth import auth_bp
+from auth import auth_bp, yj_render
 from quiz import quiz_bp
 
 app = Flask(__name__)
@@ -16,7 +16,7 @@ database.create_database()
 @app.route('/')
 def hello():
     from auth import username  # Import the username variable
-    return render_template('home.html', username=username)
+    return yj_render('home.html')
 
 if __name__ == '__main__':
     import os
