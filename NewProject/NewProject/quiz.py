@@ -69,13 +69,16 @@ def viewQuizes():
 @login_required
 def getQuiz(quizName):
     global username
-    # query the database to get the questions of the quiz
-    # then make it a json object and pass it to the template
     data = database.query_database(
         query='SELECT * FROM quizzes WHERE title = ?',
         parameters=(quizName, ))
     
-    return yj_render('quiz.html', data=json.dumps(data[quizName]))
+    quiz_data = next((item for item in data if item['title'] == quizName), None)
+    if quiz_data is None:
+        return "Quiz not found", 404
+    
+    return yj_render('quiz.html', data=json.dumps(quiz_data))
+
 
 @quiz_bp.route('/getQuizes')
 # @login_required
