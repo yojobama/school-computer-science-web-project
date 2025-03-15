@@ -27,21 +27,23 @@ function submitQuestions(event) {
     const quizName = document.getElementById("quizName").value;
     const quizDescription = document.getElementById("quizDescription").value;
     const answer = document.getElementById("answer").value;
-    const image = document.getElementById("image").value;
+    const imageFile = document.getElementById("quizImage").files[0];
     const quizData = {
         name: quizName,
         description: quizDescription,
         questions: questions,
-        answer: answer,
-        image: image
+        answer: answer
     };
+
+    const formData = new FormData();
+    formData.append('quizData', JSON.stringify(quizData));
+    if (imageFile) {
+        formData.append('image', imageFile);
+    }
 
     fetch('/create', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(quizData)
+        body: formData
     })
         .then(response => {
             if (!response.ok) {
