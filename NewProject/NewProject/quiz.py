@@ -1,14 +1,15 @@
 
+import random
+import uuid
 from flask import Blueprint, flash, jsonify, redirect, render_template, request, url_for
 import json
 import database
-from utills import login_required
+from auth import login_required, username
 
 quiz_bp = Blueprint('quiz', __name__)
 
-username = "Guest"
 
-@quiz_bp.route("/create", methods=["POST"])
+@quiz_bp.route("/create", methods=["POST", "GET"])
 @login_required
 def create():
     if request.method == "POST":
@@ -17,24 +18,23 @@ def create():
         description = data["description"]
         questions = data["questions"]
 
+        # create a uuid for the quiz using a random 32 bit integer
+        quiz_id = str(random.randint(0, 4294967296))
+
         # Insert the quiz into the database
         database.query_database(
-            query='INSERT INTO quizzes (title, description) VALUES (?, ?)',
-            parameters=(title, description))
-
-        # Get the quiz ID of the newly inserted quiz
-        quiz_id = database.query_database(
-            query='SELECT id FROM quizzes WHERE title = ?',
-            parameters=(title, ))[0]['id']
+            query='INSERT INTO quizzes (ID, title, description, creator) VALUES (?, ?, ?, ?)',
+            parameters=(quiz_id,title, description, username))
 
         # Insert each question into the questions table
         for question in questions:
             question_text = question["question"]
+            question_answer = question["answer"]
             options = json.dumps(question["options"])  # Store options as JSON
             database.query_database(
                 query=
-                'INSERT INTO questions (quiz_id, question_text, options) VALUES (?, ?, ?)',
-                parameters=(quiz_id, question_text, options))
+                'INSERT INTO questions (quizID, question, answer, options) VALUES (?, ?, ?, ?)',
+                parameters=(quiz_id, question_text, question_answer, options))
 
         flash("Quiz created successfully!")
         return jsonify({"message": "Quiz created successfully!"}), 200
@@ -69,22 +69,6 @@ def getQuizes():
     # query the database to get all of the quizzes and then jsonify them
     data = database.query_database(
         query='SELECT title, description FROM quizzes')
-
-    data = {
-        'items': [{
-            'imageSrc': url_for('static', filename='images/test1.png'),
-            'name': 'test1'
-        }, {
-            'imageSrc': url_for('static', filename='images/test2.png'),
-            'name': 'test2'
-        }, {
-            'imageSrc': url_for('static', filename='images/test3.png'),
-            'name': 'test3'
-        }, {
-            'imageSrc': url_for('static', filename='images/test4.png'),
-            'name': 'test4'
-        }]
-    }
     return jsonify(data)
 
 

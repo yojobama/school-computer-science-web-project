@@ -48,9 +48,14 @@ def create_database():
                    )
                    ''')
 
-    # create an admin user named "Admin"
-    query_database(query=(
-        'INSERT INTO users (username, password, firstName, lastName, email, isAdmin) '
-        'VALUES (?, ?, ?, ?, ?, ?)'),
-                   parameters=("Admin", "A!1111", "Yoav John", "Barak-Maurice",
-                               "yojobama@gmail.com", True))
+    existing_admin = query_database(query=(
+        'SELECT 1 FROM users WHERE username = ?'),
+        parameters=("Admin",))
+
+    # Create the admin user named "Admin" if it does not exist
+    if not existing_admin:
+        query_database(query=(
+            'INSERT INTO users (username, password, firstName, lastName, email, isAdmin) '
+            'VALUES (?, ?, ?, ?, ?, ?)'),
+            parameters=("Admin", "A!1111", "Yoav John", "Barak-Maurice",
+                        "yojobama@gmail.com", True))

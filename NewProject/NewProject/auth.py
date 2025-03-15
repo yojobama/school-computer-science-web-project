@@ -1,3 +1,4 @@
+from functools import wraps
 from flask import Blueprint, flash, redirect, render_template, request, url_for
 import database
 
@@ -5,6 +6,25 @@ auth_bp = Blueprint('auth', __name__)
 
 username = "Guest"
 
+
+def login_required(f):
+
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if username == None or username == "Guest":
+            return redirect('/login', code=302)
+        return f(*args, **kwargs)
+
+    return decorated_function
+
+def admin_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if database.query_database(query="SELECT isAdmin FROM users WHERE username=?", parameters=[username]):
+            return f(*args, **kwargs)
+        else:
+            return redirect('/login', code=302)
+    return decorated_function
 
 @auth_bp.route("/login", methods=['GET', 'POST'])
 def login():

@@ -1,9 +1,10 @@
 let questions = [];
 
 class Question {
-    constructor(question, options) {
+    constructor(question, options, answer) {
         this.question = question;
         this.options = options;
+        this.answer = answer;
     }
 }
 
@@ -16,7 +17,7 @@ function openQuestionForm() {
 
 function closeQuestionForm(event) {
     event.preventDefault();
-    questions.push(new Question(document.getElementById("question").value, document.getElementById("options").value.split("\n")));
+    questions.push(new Question(document.getElementById("question").value, document.getElementById("options").value.split("\n"), document.getElementById("answer").value));
     document.getElementById("questionForm").style.display = "none";
     updateQuestions();
 }
@@ -25,10 +26,12 @@ function submitQuestions(event) {
     event.preventDefault();
     const quizName = document.getElementById("quizName").value;
     const quizDescription = document.getElementById("quizDescription").value;
+    const answer = document.getElementById("answer").value;
     const quizData = {
         name: quizName,
         description: quizDescription,
-        questions: questions
+        questions: questions,
+        answer: answer,
     };
 
     fetch('/create', {

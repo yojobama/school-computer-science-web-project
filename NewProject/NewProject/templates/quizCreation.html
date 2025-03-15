@@ -15,6 +15,7 @@
                     <input type="text" class="form-control" id="quizName" name="quizName" placeholder="Enter quiz name">
                     <label for="quizDescription">Quiz Description</label>
                     <input type="text" class="form-control" id="quizDescription" name="quizDescription" placeholder="Enter quiz description">
+
                     <button type="button" onclick="openQuestionForm()">Add Question</button>
                     <ul id="questionList"></ul>
                 </div>
@@ -25,6 +26,8 @@
                 <input type="text" id="question">
                 <label for="options">Options (each on a separate line):</label>
                 <textarea id="options"></textarea>
+                <label for="answer">Correct Answer</label>
+                <input type="text" id="answer" />
                 <button type="submit">Submit</button>
             </form>
         </div>
