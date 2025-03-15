@@ -19,12 +19,19 @@ def create():
         questions = data["questions"]
 
         # create a uuid for the quiz using a random 32 bit integer
-        quiz_id = str(random.randint(0, 4294967296))
-
+        quiz_id: int
+        while True:
+            quiz_id = str(random.randint(0, 4294967296))
+            existing_quiz = database.query_database(
+                query='SELECT ID FROM quizzes WHERE ID = ?',
+                parameters=(quiz_id,))
+            if not existing_quiz:
+                break
+        
         # Insert the quiz into the database
         database.query_database(
             query='INSERT INTO quizzes (ID, title, description, creator) VALUES (?, ?, ?, ?)',
-            parameters=(quiz_id,title, description, username))
+            parameters=(quiz_id, title, description, username))
 
         # Insert each question into the questions table
         for question in questions:
@@ -32,8 +39,7 @@ def create():
             question_answer = question["answer"]
             options = json.dumps(question["options"])  # Store options as JSON
             database.query_database(
-                query=
-                'INSERT INTO questions (quizID, question, answer, options) VALUES (?, ?, ?, ?)',
+                query='INSERT INTO questions (quizID, question, answer, options) VALUES (?, ?, ?, ?)',
                 parameters=(quiz_id, question_text, question_answer, options))
 
         flash("Quiz created successfully!")
