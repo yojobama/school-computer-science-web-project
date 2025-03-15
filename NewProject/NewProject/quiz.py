@@ -17,6 +17,7 @@ def create():
         title = data["name"]
         description = data["description"]
         questions = data["questions"]
+        image = request.files["image"]
 
         # create a uuid for the quiz using a random 32 bit integer
         quiz_id: int
@@ -27,6 +28,9 @@ def create():
                 parameters=(quiz_id,))
             if not existing_quiz:
                 break
+        
+        # Save the image with the name of the quiz id under the images folder in static
+        image.save(f'static/images/{quiz_id}.png')
         
         # Insert the quiz into the database
         database.query_database(
@@ -49,7 +53,6 @@ def create():
 
 
 @quiz_bp.route("/getQuizView")
-@login_required
 def viewQuizes():
     return render_template('quizView.html', username=username)
 
@@ -70,11 +73,12 @@ def getQuiz(quizName):
 
 
 @quiz_bp.route('/getQuizes')
-@login_required
+# @login_required
 def getQuizes():
     # query the database to get all of the quizzes and then jsonify them
     data = database.query_database(
-        query='SELECT title, description FROM quizzes')
+        query='SELECT ID ,title, description FROM quizzes')
+    print(jsonify(data))
     return jsonify(data)
 
 

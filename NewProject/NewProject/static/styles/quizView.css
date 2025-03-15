@@ -84,3 +84,11 @@
     .quiz-submit:hover {
         background-color: #0056b3;
     }
+
+/* Style for quiz description */
+.quiz-description {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #666;
+    line-height: 1.5;
+}

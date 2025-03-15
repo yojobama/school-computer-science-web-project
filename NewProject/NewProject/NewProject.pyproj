@@ -28,7 +28,7 @@
   <ItemGroup>
     <Content Include="requirements.txt" />
     <Content Include="static\styles\home.css" />
-    <Content Include="static\images\test1.png" />
+    <Content Include="static\images\2538346635.png" />
     <Content Include="static\images\test2.png" />
     <Content Include="static\images\test3.png" />
     <Content Include="static\images\test4.png" />

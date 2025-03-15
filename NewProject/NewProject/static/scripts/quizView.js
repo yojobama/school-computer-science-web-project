@@ -14,19 +14,24 @@ function fetch_json() {
 // creating a quiz element from a json object
 function create_item(json_input) {
     let a = document.createElement('a');
-    a.href = "/getQuiz/" + json_input['name'];
+    a.href = "/getQuiz/" + json_input[0];
     a.className = 'quiz-container';
 
     let division = document.createElement('div');
 
     let image = document.createElement('img');
-    image.src = json_input['imageSrc'];
+    image.src = "static/images/" + json_input[0] + ".png";
     division.appendChild(image);
 
     let quizName = document.createElement('p');
     quizName.className = 'quiz-title';
-    quizName.innerHTML = json_input['name'];
+    quizName.innerHTML = json_input[1];
     division.appendChild(quizName);
+
+    let quizDescription = document.createElement('p');
+    quizDescription.className = 'quiz-description';
+    quizDescription.innerHTML = json_input[2];
+    division.appendChild(quizDescription);
 
     a.append(division);
 
@@ -39,7 +44,7 @@ function json_to_items(jsonInput) {
     container.style.flexWrap = 'wrap';
     container.style.gap = '20px';
     container.style.justifyContent = 'center';
-    for (let item of jsonInput['items']) {
+    for (let item of jsonInput) {
         container.appendChild(create_item(item));
     }
     return container;

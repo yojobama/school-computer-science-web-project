@@ -27,11 +27,13 @@ function submitQuestions(event) {
     const quizName = document.getElementById("quizName").value;
     const quizDescription = document.getElementById("quizDescription").value;
     const answer = document.getElementById("answer").value;
+    const image = document.getElementById("image").value; // Added line to get image value
     const quizData = {
         name: quizName,
         description: quizDescription,
         questions: questions,
         answer: answer,
+        image: image // Added image to quizData
     };
 
     fetch('/create', {
