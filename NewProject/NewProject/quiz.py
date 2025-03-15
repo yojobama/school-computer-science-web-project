@@ -5,7 +5,7 @@ import uuid
 from flask import Blueprint, flash, jsonify, redirect, render_template, request, url_for
 import json
 import database
-from auth import login_required, username, yj_render, is_admin
+from auth import admin_required, login_required, username, yj_render, is_admin
 
 quiz_bp = Blueprint('quiz', __name__)
 
@@ -67,6 +67,7 @@ def create():
 
 
 @quiz_bp.route("/getQuizView")
+@login_required
 def viewQuizes():
     return yj_render('quizView.html')
 
@@ -104,7 +105,7 @@ def getQuiz(quizID):
 
 
 @quiz_bp.route('/getQuizes')
-# @login_required
+@login_required
 def getQuizes():
     # query the database to get all of the quizzes and then jsonify them
     data = database.query_database(
@@ -114,6 +115,8 @@ def getQuizes():
 
 
 @quiz_bp.route("/users")
+@login_required
+@admin_required
 def users():
     user_list = database.query_database(
         query='SELECT username, password, firstName, lastName, email FROM users'
