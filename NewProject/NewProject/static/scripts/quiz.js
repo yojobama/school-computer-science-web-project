@@ -5,7 +5,7 @@ function initialize_quiz(data) {
 
     document.getElementById('content').addEventListener('submit', function (event) {
         event.preventDefault();
-        handleFormSubmit();
+        handleFormSubmit(JSON.parse(data));
     });
 }
 
@@ -38,9 +38,11 @@ function create_item(item) {
 
     let options = document.createElement('select');
     options.className = 'quiz-options';
+    options.name = item['question']; // Add name attribute to identify the question
     for (let option of item.options) {
         let optionHtml = document.createElement('option');
         optionHtml.className = 'quiz-option';
+        optionHtml.value = option; // Set the value attribute to the option text
         optionHtml.innerHTML = option;
         options.appendChild(optionHtml);
     }
@@ -49,9 +51,27 @@ function create_item(item) {
     return questionContainer;
 }
 
-function handleFormSubmit() {
+function handleFormSubmit(data) {
     const formData = new FormData(document.getElementById('content'));
-    const entries = Array.from(formData.entries());
-    console.log(entries); // Process the form data as needed
-    alert('Form submitted! Check the console for form data.');
+    let correctAnswers = 0;
+
+    data.questions.forEach((question) => {
+        const selectedOption = formData.get(question.question);
+        if (selectedOption === question.answer) {
+            correctAnswers++;
+        }
+    });
+
+    showResults(correctAnswers, data.questions.length);
+}
+
+function showResults(correct, total) {
+    const percentage = (correct / total) * 100;
+    const resultMessage = `You got ${percentage}% correct!`;
+    document.getElementById('result-message').innerText = resultMessage;
+    document.getElementById('result-popup').style.display = 'block';
+}
+
+function closePopup() {
+    document.getElementById('result-popup').style.display = 'none';
 }

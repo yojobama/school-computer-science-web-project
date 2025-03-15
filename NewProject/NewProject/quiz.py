@@ -1,10 +1,11 @@
 
+from email import quoprimime
 import random
 import uuid
 from flask import Blueprint, flash, jsonify, redirect, render_template, request, url_for
 import json
 import database
-from auth import login_required, username, yj_render,  is_admin
+from auth import login_required, username, yj_render, is_admin
 
 quiz_bp = Blueprint('quiz', __name__)
 
@@ -28,26 +29,30 @@ def create():
                     quiz_id = str(random.randint(0, 4294967296))
                     existing_quiz = database.query_database(
                         query='SELECT ID FROM quizzes WHERE ID = ?',
-                        parameters=(quiz_id,))
+                        parameters=(quiz_id, ))
                     if not existing_quiz:
                         break
-                
+
                 # Save the image with the name of the quiz id under the images folder in static
                 image.save(f'static/images/{quiz_id}.png')
-                
+
                 # Insert the quiz into the database
                 database.query_database(
-                    query='INSERT INTO quizzes (ID, title, description, creator) VALUES (?, ?, ?, ?)',
+                    query=
+                    'INSERT INTO quizzes (ID, title, description, creator) VALUES (?, ?, ?, ?)',
                     parameters=(quiz_id, title, description, username))
 
                 # Insert each question into the questions table
                 for question in questions:
                     question_text = question["question"]
                     question_answer = question["answer"]
-                    options = json.dumps(question["options"])  # Store options as JSON
+                    options = json.dumps(
+                        question["options"])  # Store options as JSON
                     database.query_database(
-                        query='INSERT INTO questions (quizID, question, answer, options) VALUES (?, ?, ?, ?)',
-                        parameters=(quiz_id, question_text, question_answer, options))
+                        query=
+                        'INSERT INTO questions (quizID, question, answer, options) VALUES (?, ?, ?, ?)',
+                        parameters=(quiz_id, question_text, question_answer,
+                                    options))
 
                 flash("Quiz created successfully!")
                 return jsonify({"message": "Quiz created successfully!"}), 200
@@ -60,32 +65,41 @@ def create():
     else:
         return yj_render("quizCreation.html")
 
+
 @quiz_bp.route("/getQuizView")
 def viewQuizes():
     return yj_render('quizView.html')
+
 
 @quiz_bp.route("/getQuiz/<quizID>")
 @login_required
 def getQuiz(quizID):
     global username
     data = database.query_database(
-        query='SELECT question, options FROM questions WHERE quizID = ?',
+        query='SELECT question, options, answer FROM questions WHERE quizID = ?',
         parameters=(quizID, ))
-    
+
     if not data:
         return jsonify({"error": "Quiz not found"}), 404
-    
+
     # Format the data to match the expected JSON structure
     quiz_data = {
-        "header": f"{database.query_database('SELECT title FROM quizzes WHERE ID = ?', (quizID,))[0][0]}",
+        "header":
+        f"{database.query_database('SELECT title FROM quizzes WHERE ID = ?', (quizID,))[0][0]}",
         "questions": [
             {
-                "question": item[0],  # Access the first element of the tuple
-                "options": json.loads(item[1])    # Access the second element of the tuple and parse JSON
+                "question":
+                item[0],  # Access the first element of the tuple
+                "options":
+                json.loads(
+                    item[1]
+                ),  # Access the second element of the tuple and parse JSON
+                "answer":
+                item[2]
             } for item in data
         ]
     }
-    
+
     return yj_render('quiz.html', data=json.dumps(quiz_data))
 
 

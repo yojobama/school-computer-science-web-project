@@ -7,15 +7,19 @@
 {% block content %}
 <form id="content">
 </form>
+<div id="result-popup" class="result-popup" style="display: none;">
+    <p id="result-message"></p>
+    <button onclick="closePopup()">Close</button>
+</div>
 {% endblock %}
 
 {% block scripts %}
 <script src="../static/scripts/quiz.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const data = {{ data | tojson | safe }};
-        alert(data)
-        initialize_quiz(data);
-    });
+   document.addEventListener('DOMContentLoaded', function () {
+       const data = {{ data | tojson | safe }};
+       alert(data)
+       initialize_quiz(data);
+   });
 </script>
 {% endblock %}
