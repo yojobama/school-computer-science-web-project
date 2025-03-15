@@ -64,18 +64,27 @@ def create():
 def viewQuizes():
     return yj_render('quizView.html')
 
-
-@quiz_bp.route('/getQuiz/<quizName>')
+@quiz_bp.route("/getQuiz/<quizID>")
 @login_required
-def getQuiz(quizName):
+def getQuiz(quizID):
     global username
     data = database.query_database(
-        query='SELECT * FROM quizzes WHERE title = ?',
-        parameters=(quizName, ))
+        query='SELECT question, options FROM questions WHERE quizID = ?',
+        parameters=(quizID, ))
     
-    quiz_data = next((item for item in data if item['title'] == quizName), None)
-    if quiz_data is None:
-        return "Quiz not found", 404
+    if not data:
+        return jsonify({"error": "Quiz not found"}), 404
+    
+    # Format the data to match the expected JSON structure
+    quiz_data = {
+        "header": f"{database.query_database('SELECT title FROM quizzes WHERE ID = ?', (quizID,))[0][0]}",
+        "questions": [
+            {
+                "question": item[0],  # Access the first element of the tuple
+                "options": json.loads(item[1])    # Access the second element of the tuple and parse JSON
+            } for item in data
+        ]
+    }
     
     return yj_render('quiz.html', data=json.dumps(quiz_data))
 
