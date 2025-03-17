@@ -18,7 +18,6 @@
 <script>
    document.addEventListener('DOMContentLoaded', function () {
        const data = {{ data | tojson | safe }};
-       alert(data)
        initialize_quiz(data);
    });
 </script>
