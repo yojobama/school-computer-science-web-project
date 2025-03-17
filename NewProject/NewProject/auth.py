@@ -11,22 +11,24 @@ def yj_render(page, **kwargs):
     return render_template(page, username=username, is_admin=is_admin(), **kwargs)
 
 def is_admin():
-    return database.query_database(query="SELECT isAdmin FROM users WHERE username=?", parameters=[username])
+    global username
+    result = database.query_database(query="SELECT isAdmin FROM users WHERE username=?", parameters=[username])
+    if result:
+        return result[0][0] == 1
+    return False
 
 def login_required(f):
-
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if username == None or username == "Guest":
             return redirect('/login', code=302)
         return f(*args, **kwargs)
-
     return decorated_function
 
 def admin_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if is_admin() == True:
+        if is_admin():
             return f(*args, **kwargs)
         else:
             return redirect('/login', code=302)
@@ -51,7 +53,6 @@ def login():
             flash("Invalid username or password")
             return redirect(url_for('auth.login'))
     return yj_render('login.html')
-
 
 @auth_bp.route("/signup", methods=["POST", "GET"])
 def signup():
@@ -80,7 +81,6 @@ def signup():
             flash("Username is already taken!")
             return redirect(url_for('auth.signup'))
     return yj_render("signup.html")
-
 
 @auth_bp.route('/logout')
 def logout():
