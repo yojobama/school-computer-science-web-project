@@ -65,9 +65,6 @@
     <Compile Include="quiz.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="utills.py">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />

@@ -1,5 +1,4 @@
 import sqlite3
-import utills
 
 
 def query_database(query, parameters=()):

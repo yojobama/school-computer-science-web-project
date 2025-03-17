@@ -6,7 +6,6 @@ auth_bp = Blueprint('auth', __name__)
 
 username = "Guest"
 
-
 def yj_render(page, **kwargs):
     global username
     return render_template(page, username=username, is_admin=is_admin(), **kwargs)
@@ -27,7 +26,7 @@ def login_required(f):
 def admin_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if isAdmin():
+        if is_admin() == True:
             return f(*args, **kwargs)
         else:
             return redirect('/login', code=302)
@@ -88,3 +87,12 @@ def logout():
     global username
     username = "Guest"
     return redirect(url_for('hello'))
+
+@auth_bp.route("/users")
+@login_required
+@admin_required
+def users():
+    user_list = database.query_database(
+        query='SELECT username, password, firstName, lastName, email FROM users'
+    )
+    return yj_render('users.html', users=user_list)

@@ -22,8 +22,8 @@
             </td>
             <td class="right-options">
                 <a>hello: {{ username }}!</a>
-                {% if is_admin %}
-                <a href="users">User Manegment</a>
+                {% if is_admin == True %}
+                <a href="/users">User Management</a>
                 {% endif %}
                 {% if username == "Guest" %}
                 <a href="/auth.signup">Sign In</a>

@@ -9,7 +9,6 @@ from auth import admin_required, login_required, username, yj_render, is_admin
 
 quiz_bp = Blueprint('quiz', __name__)
 
-
 @quiz_bp.route("/create", methods=["POST", "GET"])
 @login_required
 def create():
@@ -112,13 +111,3 @@ def getQuizes():
         query='SELECT ID ,title, description FROM quizzes')
     print(jsonify(data))
     return jsonify(data)
-
-
-@quiz_bp.route("/users")
-@login_required
-@admin_required
-def users():
-    user_list = database.query_database(
-        query='SELECT username, password, firstName, lastName, email FROM users'
-    )
-    return yj_render('users.html', users=user_list)
