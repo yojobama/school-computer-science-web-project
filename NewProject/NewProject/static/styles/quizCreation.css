@@ -22,7 +22,8 @@
 }
 
 .form-group input,
-.form-group textarea {
+.form-group textarea,
+.form-group select {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -90,4 +91,21 @@ button[type="submit"]:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for dropdown select */
+.form-group select {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Updated to match signup.css */
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group select:hover {
+    border-color: #45a049; /* Updated to match signup.css */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

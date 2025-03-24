@@ -82,3 +82,49 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('quizForm').addEventListener('submit', submitQuestions);
     document.getElementById('questionForm').addEventListener('submit', closeQuestionForm);
 });
+
+function openQuestionForm() {
+    console.log("openQuestionForm called");
+    document.getElementById("question").value = "";
+    document.getElementById("options").value = "";
+    document.getElementById("questionForm").style.display = "block";
+}
+
+function closeQuestionForm(event) {
+    event.preventDefault();
+    const question = document.getElementById("question").value;
+    const options = document.getElementById("options").value.split("\n");
+    const answer = document.getElementById("answer").value;
+    questions.push(new Question(question, options, answer));
+    document.getElementById("questionForm").style.display = "none";
+    updateQuestions();
+}
+
+function updateQuestions() {
+    let questionList = document.getElementById("questionList");
+    questionList.innerHTML = "";
+    for (let i = 0; i < questions.length; i++) {
+        let listItem = document.createElement("li");
+        listItem.innerHTML = questions[i].question;
+        questionList.appendChild(listItem);
+    }
+    updateAnswerOptions();
+}
+
+function updateAnswerOptions() {
+    const options = document.getElementById("options").value.split("\n");
+    const answerSelect = document.getElementById("answer");
+    answerSelect.innerHTML = "";
+    options.forEach(option => {
+        let optionElement = document.createElement("option");
+        optionElement.value = option;
+        optionElement.text = option;
+        answerSelect.appendChild(optionElement);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('quizForm').addEventListener('submit', submitQuestions);
+    document.getElementById('questionForm').addEventListener('submit', closeQuestionForm);
+    document.getElementById('options').addEventListener('input', updateAnswerOptions);
+});
