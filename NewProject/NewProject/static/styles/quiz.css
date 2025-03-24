@@ -110,6 +110,9 @@
     background-color: #4CAF50;
     color: white;
     align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .result-popup {

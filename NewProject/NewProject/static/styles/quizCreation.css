@@ -1,80 +1,93 @@
-/* Container styling */
+/* Style for the quiz creation container */
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Updated to match signup.css */
+    border-radius: 16px; /* Updated to match signup.css */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Updated to match signup.css */
+    font-family: Arial, sans-serif; /* Updated to match signup.css */
 }
 
-/* Header styling */
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-/* Form group styling */
+/* Style for form elements */
 .form-group {
     margin-bottom: 20px;
 }
 
-/* Label styling */
-label {
-    display: block;
-    margin-bottom: 5px;
+.form-group label {
     font-weight: bold;
-    color: #555;
+    margin-bottom: 8px; /* Updated to match signup.css */
+    display: block;
+    color: #333; /* Updated to match signup.css */
 }
 
-/* Input and textarea styling */
-input[type="text"],
-textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px; /* Updated to match signup.css */
     box-sizing: border-box;
-}
-
-/* Button styling */
-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
     font-size: 16px;
 }
 
-    button:hover {
-        background-color: #0056b3;
-    }
+.form-group input[type="file"] {
+    padding: 10px;
+    background-color: #4CAF50; /* Updated to match signup.css */
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Updated to match signup.css */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
 
-/* Question list styling */
+.form-group input[type="file"]:hover {
+    background-color: #45a049; /* Updated to match signup.css */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button[type="button"],
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Updated to match signup.css */
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Updated to match signup.css */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button[type="button"]:hover,
+button[type="submit"]:hover {
+    background-color: #45a049; /* Updated to match signup.css */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 #questionList {
     list-style-type: none;
     padding: 0;
 }
 
-    #questionList li {
-        padding: 10px;
-        margin-bottom: 5px;
-        background-color: #e9ecef;
-        border-radius: 4px;
-    }
+#questionList li {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-/* Question form styling */
+/* Style for hidden question form */
 #questionForm {
-    display: none;
     margin-top: 20px;
     padding: 20px;
     background-color: #f1f1f1;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

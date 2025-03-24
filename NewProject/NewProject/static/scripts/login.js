@@ -54,3 +54,21 @@ function check_username() {
     error.innerHTML = ""; // Clear any previous error message
     return true;
 }
+
+document.querySelector("form").addEventListener("submit", async function(event) {
+    event.preventDefault();
+    if (login_final()) {
+        let formData = new FormData(this);
+        let response = await fetch(this.action, {
+            method: this.method,
+            body: formData
+        });
+        let result = await response.json();
+        if (result.success) {
+            window.location.href = "/";
+        } else {
+            document.getElementById("usernameErr").innerText = result.message;
+            document.getElementById("passwordErr").innerText = result.message;
+        }
+    }
+});

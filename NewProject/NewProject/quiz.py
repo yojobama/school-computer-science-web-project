@@ -5,7 +5,7 @@ import uuid
 from flask import Blueprint, flash, jsonify, redirect, render_template, request, url_for
 import json
 import database
-from auth import admin_required, login_required, username, yj_render, is_admin
+from auth import admin_required, login_required, get_current_username, yj_render, is_admin
 
 quiz_bp = Blueprint('quiz', __name__)
 
@@ -39,7 +39,7 @@ def create():
                 database.query_database(
                     query=
                     'INSERT INTO quizzes (ID, title, description, creator) VALUES (?, ?, ?, ?)',
-                    parameters=(quiz_id, title, description, username))
+                    parameters=(quiz_id, title, description, get_current_username()))
 
                 # Insert each question into the questions table
                 for question in questions:
@@ -74,7 +74,7 @@ def viewQuizes():
 @quiz_bp.route("/getQuiz/<quizID>")
 @login_required
 def getQuiz(quizID):
-    global username
+    global username                           
     data = database.query_database(
         query='SELECT question, options, answer FROM questions WHERE quizID = ?',
         parameters=(quizID, ))

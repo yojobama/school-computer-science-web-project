@@ -1,5 +1,13 @@
 {% extends "layout.html" %}
-
+<!-- ...existing code... -->
+<form method="post" action="{{ url_for('auth.login') }}" onsubmit="return login_final()">
+    <!-- ...existing code... -->
+</form>
+<!-- ...existing code... -->
+{% block scripts %}
+<script src="../static/scripts/login.js"></script>
+{% endblock %}
+<!-- ...existing code... -->
 {% block title %} YJ-Quiz Login {% endblock %}
 
 {% block styles %}
@@ -24,8 +32,4 @@
         </form>
     </div>
 </div>
-{% endblock %}
-
-{% block scripts %}
-<script src="../static/scripts/login.js"></script>
 {% endblock %}

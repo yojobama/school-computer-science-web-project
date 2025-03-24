@@ -1,5 +1,5 @@
 from functools import wraps
-from flask import Blueprint, flash, redirect, render_template, request, url_for
+from flask import Blueprint, flash, redirect, render_template, request, url_for, jsonify
 import database
 
 auth_bp = Blueprint('auth', __name__)
@@ -9,6 +9,10 @@ username = "Guest"
 def yj_render(page, **kwargs):
     global username
     return render_template(page, username=username, is_admin=is_admin(), **kwargs)
+
+def get_current_username():
+    global username
+    return username
 
 def is_admin():
     global username
@@ -48,10 +52,9 @@ def login():
 
         if result:  # If a matching user is found
             username = l_username
-            return redirect(url_for('hello'))
+            return jsonify(success=True)
         else:
-            flash("Invalid username or password")
-            return redirect(url_for('auth.login'))
+            return jsonify(success=False, message="Invalid username or password")
     return yj_render('login.html')
 
 @auth_bp.route("/signup", methods=["POST", "GET"])

@@ -23,6 +23,11 @@ function closeQuestionForm(event) {
 }
 
 function submitQuestions(event) {
+
+    if (questions.length == 0) {
+        return false;
+    }
+
     event.preventDefault();
     const quizName = document.getElementById("quizName").value;
     const quizDescription = document.getElementById("quizDescription").value;

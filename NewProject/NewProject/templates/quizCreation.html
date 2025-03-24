@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block styles %}
-<link rel="stylesheet" type="text/css" href="../static/styles/quizCreation.css" />
+<link href="../static/styles/quizCreation.css" rel="stylesheet" />
 {% endblock %}
 
 {% block content %}
@@ -9,28 +9,85 @@
     <div class="row">
         <div class="col-md-12">
             <h1>Quiz Creation</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
             <form id="quizForm" method="post">
-                <div class="form-group">
-                    <label for="quizName">Quiz Name</label>
-                    <input type="text" class="form-control" id="quizName" name="quizName" placeholder="Enter quiz name">
-                    <label for="quizDescription">Quiz Description</label>
-                    <input type="text" class="form-control" id="quizDescription" name="quizDescription" placeholder="Enter quiz description">
-                    <label for="quizImage">Quiz Image</label>
-                    <input type="file" class="form-control" id="quizImage" name="quizImage" accept="image/*">
-                    <br />
-                    <button type="button" onclick="openQuestionForm()">Add Question</button>
-                    <ul id="questionList"></ul>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="quizName">Quiz Name</label>
+                            <input type="text" class="form-control" id="quizName" name="quizName" placeholder="Enter quiz name">
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="quizDescription">Quiz Description</label>
+                            <input type="text" class="form-control" id="quizDescription" name="quizDescription" placeholder="Enter quiz description">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="quizImage">Quiz Image</label>
+                            <input type="file" class="form-control" id="quizImage" name="quizImage" accept="image/*">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="button" onclick="openQuestionForm()">Add Question</button>
+                            <ul id="questionList"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
             </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
             <form id="questionForm" style="display: none;">
-                <label for="question">Question:</label>
-                <input type="text" id="question">
-                <label for="options">Options (each on a separate line):</label>
-                <textarea id="options"></textarea>
-                <label for="answer">Correct Answer</label>
-                <input type="text" id="answer" />
-                <button type="submit">Submit</button>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="question">Question:</label>
+                            <input type="text" id="question" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="options">Options (each on a separate line):</label>
+                            <textarea id="options" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="answer">Correct Answer</label>
+                            <input type="text" id="answer" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
