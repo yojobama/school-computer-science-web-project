@@ -10,7 +10,7 @@
 <div class="signup">
     <div class="signup-container">
         <h1>Signup</h1>
-        <form method="post" action="{{ url_for('auth.signup') }}" onsubmit="signup_final()">
+        <form method="post" action="{{ url_for('auth.signup') }}" onsubmit="return signup_final()">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required />
             <p id="usernameErr" class="error"></p>
@@ -19,6 +19,10 @@
             <input type="password" id="password" name="password" required />
             <p id="passwordErr" class="error"></p>
 
+            <label for="passwordCopy">Enter The Selected Password:</label>
+            <input type="password" id="passwordCopy" name="passwordCopy" required/>
+            <p id="passwordCopyErr" class="error"></p>
+            
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" required />
             <p id="firstNameErr" class="error"></p>

@@ -33,6 +33,13 @@ def create():
                         break
 
                 # Save the image with the name of the quiz id under the images folder in static
+                
+                import os
+
+                # Ensure the directory static/images exists
+                if not os.path.exists('static/images'):
+                    os.makedirs('static/images')
+
                 image.save(f'static/images/{quiz_id}.png')
 
                 # Insert the quiz into the database
