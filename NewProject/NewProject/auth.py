@@ -96,6 +96,6 @@ def logout():
 @admin_required
 def users():
     user_list = database.query_database(
-        query='SELECT username, password, firstName, lastName, email FROM users'
+        query='SELECT username, password, firstName, lastName, email, isAdmin FROM users'
     )
     return yj_render('users.html', users=user_list)
